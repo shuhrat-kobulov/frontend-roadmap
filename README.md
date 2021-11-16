@@ -1,4 +1,4 @@
-# Frontend
+# Frontend roadmap
 
 ## Learning Javascript syntax
 
