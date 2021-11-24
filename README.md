@@ -1,5 +1,17 @@
 # Frontend roadmap
 
+## HTML
+
+1.  Fundamental HTML
+
+    -   Reading
+
+        -   [www.w3schools.com](https://www.w3schools.com/html/)
+        -   [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/HTML)
+
+    -   Videos
+        -   [webDev](https://www.youtube.com/playlist?list=PLNkWIWHIRwMFtHHg0amAgocYP-kZypbY7)
+
 ## Learning Javascript syntax
 
 -   [An Introduction](https://javascript.info/getting-started)
