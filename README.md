@@ -2,20 +2,20 @@
 
 ## HTML
 
-### HTML tags
+#### HTML tags
 
 -   [HTML tutorial](https://www.w3schools.com/html/default.asp)
 -   [HTML tags](https://www.w3schools.com/tags/tag_comment.asp)
 -   [HTML form](https://www.w3schools.com/html/html_forms.asp)
 -   [HTML Reference](https://www.w3schools.com/tags/default.asp)
--   
-### Semantical HTML
+
+#### Semantical HTML
 
 -   [w3schools.com](https://www.w3schools.com/html/html5_semantic_elements.asp)
 -   [MDN](https://developer.mozilla.org/ru/docs/Glossary/Semantics)
 -   [freeCodeCamp.org](https://www.freecodecamp.org/news/semantic-html5-elements/)
 
-### Accessibility
+#### Accessibility
 -   [MDN](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility)
 -   [w3.org](https://www.w3.org/standards/webdesign/accessibility)
 
