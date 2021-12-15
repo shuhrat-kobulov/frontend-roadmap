@@ -20,14 +20,14 @@
 
 # 2.CSS
 
-### 1.CSS Basic
+#### 1.CSS Basic
 -   [CSS tutorial](https://www.w3schools.com/css/default.asp)
 -   [CSS Responsive](https://www.w3schools.com/css/css_rwd_intro.asp)
 
-### 2.Flex
+#### 2.Flex
 -   [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp)
 
-### 3.Grid
+#### 3.Grid
 -   [Grid](https://www.w3schools.com/css/css_grid.asp)
 -   [CSS Grid With Wes Bos](https://cssgrid.io/)
 
