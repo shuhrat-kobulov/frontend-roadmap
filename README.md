@@ -1,6 +1,4 @@
-# Frontend roadmap
-
-## 1.HTML
+# 1.HTML
 
 #### 1.HTML tags
 
@@ -20,20 +18,20 @@
 -   [MDN](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility)
 -   [w3.org](https://www.w3.org/standards/webdesign/accessibility)
 
-## 1.CSS
+# 2.CSS
 
 ### 1.CSS Basic
 -   [CSS tutorial](https://www.w3schools.com/css/default.asp)
 -   [CSS Responsive](https://www.w3schools.com/css/css_rwd_intro.asp)
 
-### Flex
+### 2.Flex
 -   [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp)
 
-### Grid
+### 3.Grid
 -   [Grid](https://www.w3schools.com/css/css_grid.asp)
 -   [CSS Grid With Wes Bos](https://cssgrid.io/)
 
-## Learning Javascript syntax
+# Javascript
 
 -   [An Introduction](https://javascript.info/getting-started)
 -   [JavaScript Fundamentals](https://javascript.info/first-steps)
@@ -47,7 +45,7 @@
 -   [Generators, advanced iteration](https://javascript.info/generators-iterators)
 -   [Modules](https://javascript.info/modules)
 
-## Typescript
+# Typescript
 
 ### Most important topics about typescript
 
