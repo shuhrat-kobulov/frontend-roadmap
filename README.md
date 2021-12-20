@@ -46,6 +46,8 @@
 -   [Modules](https://javascript.info/modules)
 
 ## React
+-   [Bigginer](https://egghead.io/courses/the-beginner-s-guide-to-react)
+-   [Redux](https://egghead.io/courses/apply-redux-to-a-modern-react-hooks-application-8a37)
 -   [Material UI](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gjxLvV4VEkZ6H6H4yWuS58)
 
 # Typescript
