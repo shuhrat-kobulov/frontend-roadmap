@@ -1,5 +1,5 @@
-# 1.HTML
-- [HTML](https://github.com/MikhailMasny/useful-web-pages/blob/master/docs/html.md)
+# Frontend
+- [1.HTML](https://github.com/mrshuhrat/frontend-roadmap/blob/main/HTML.md)
 
 # 2.CSS
 
