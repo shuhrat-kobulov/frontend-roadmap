@@ -1,20 +1,7 @@
 # Frontend
 - [HTML](https://github.com/mrshuhrat/frontend-roadmap/blob/main/HTML.md)
 - [CSS](https://github.com/mrshuhrat/frontend-roadmap/blob/main/CSS.md)
-
-# Javascript
-
--   [An Introduction](https://javascript.info/getting-started)
--   [JavaScript Fundamentals](https://javascript.info/first-steps)
--   [Code quality](https://javascript.info/code-quality)
--   [Objects: the basics](https://javascript.info/object-basics)
--   [Data types](https://javascript.info/data-types)
--   [Advanced working with functions](https://javascript.info/advanced-functions)
--   [Classes](https://javascript.info/classes)
--   [Error handling](https://javascript.info/error-handling)
--   [Promises, async/await](https://javascript.info/async)
--   [Generators, advanced iteration](https://javascript.info/generators-iterators)
--   [Modules](https://javascript.info/modules)
+- [JavaScript](https://github.com/mrshuhrat/frontend-roadmap/blob/main/JAVASCRIPT.md)
 
 ### React
 -   [Learn React](https://reactjs.org/docs/hello-world.html)
