@@ -8,13 +8,8 @@
 - [UI frameworks](https://github.com/mrshuhrat/frontend-roadmap/blob/main/docs/UI-FRAMEWORKS.md)
 - [Design](https://github.com/mrshuhrat/frontend-roadmap/blob/main/docs/DESIGN.md)
 
-### Next
--   [Bigginer](https://www.youtube.com/playlist?list=PL4cUxeGkcC9g9gP2onazU5-2M-AzA8eBw)
--   [Fullcourse](https://www.youtube.com/watch?v=1npkSwS0k9s&t=6s)
-
-# Git
--   [Git branches cheatsheet](https://devhints.io/git-branch)
--   [Git tricks](https://devhints.io/git-tricks)
+# Tools
+- [Git](https://github.com/mrshuhrat/frontend-roadmap/blob/main/docs/GIT.md)
 
 # Typescript
 
