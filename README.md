@@ -46,6 +46,7 @@
 -   [Modules](https://javascript.info/modules)
 
 ### React
+-   [Learn React](https://reactjs.org/docs/hello-world.html)
 -   [Bigginer](https://egghead.io/courses/the-beginner-s-guide-to-react)
 -   [Material UI](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gjxLvV4VEkZ6H6H4yWuS58)
 -   [Storybook](https://www.youtube.com/watch?v=FUKpWgRyPlU)
@@ -53,6 +54,9 @@
 ### Next
 -   [Bigginer](https://www.youtube.com/playlist?list=PL4cUxeGkcC9g9gP2onazU5-2M-AzA8eBw)
 -   [Fullcourse](https://www.youtube.com/watch?v=1npkSwS0k9s&t=6s)
+
+# Git
+-   [Git branches cheatsheet](https://devhints.io/git-branch)
 
 # Typescript
 
