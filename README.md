@@ -1,13 +1,8 @@
 # Frontend
-- [HTML](https://github.com/mrshuhrat/frontend-roadmap/blob/main/HTML.md)
-- [CSS](https://github.com/mrshuhrat/frontend-roadmap/blob/main/CSS.md)
-- [JavaScript](https://github.com/mrshuhrat/frontend-roadmap/blob/main/JAVASCRIPT.md)
-
-### React
--   [Learn React](https://reactjs.org/docs/hello-world.html)
--   [Bigginer](https://egghead.io/courses/the-beginner-s-guide-to-react)
--   [Material UI](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gjxLvV4VEkZ6H6H4yWuS58)
--   [Storybook](https://www.youtube.com/watch?v=FUKpWgRyPlU)
+- [HTML](https://github.com/mrshuhrat/frontend-roadmap/blob/main/docs/HTML.md)
+- [CSS](https://github.com/mrshuhrat/frontend-roadmap/blob/main/docs/CSS.md)
+- [JavaScript](https://github.com/mrshuhrat/frontend-roadmap/blob/main/docs/JAVASCRIPT.md)
+- [React.js](https://github.com/mrshuhrat/frontend-roadmap/blob/main/docs/REACTJS.md)
 
 ### Next
 -   [Bigginer](https://www.youtube.com/playlist?list=PL4cUxeGkcC9g9gP2onazU5-2M-AzA8eBw)
