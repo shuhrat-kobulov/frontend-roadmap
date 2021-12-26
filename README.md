@@ -57,6 +57,7 @@
 
 # Git
 -   [Git branches cheatsheet](https://devhints.io/git-branch)
+-   [Git tricks](https://devhints.io/git-tricks)
 
 # Typescript
 
