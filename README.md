@@ -13,3 +13,4 @@
 
 ## Additional
 - [TypeScript](https://github.com/mrshuhrat/frontend-roadmap/blob/main/docs/TYPESCRIPT.md)
+- [YouTube content](https://github.com/mrshuhrat/frontend-roadmap/blob/main/docs/YOUTUBE.md)
