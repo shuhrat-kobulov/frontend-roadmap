@@ -1,6 +1,6 @@
 # Frontend
-- [1.HTML](https://github.com/mrshuhrat/frontend-roadmap/blob/main/HTML.md)
-- [2.CSS](https://github.com/mrshuhrat/frontend-roadmap/blob/main/CSS.md)
+- [HTML](https://github.com/mrshuhrat/frontend-roadmap/blob/main/HTML.md)
+- [CSS](https://github.com/mrshuhrat/frontend-roadmap/blob/main/CSS.md)
 
 # Javascript
 
