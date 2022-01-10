@@ -16,6 +16,5 @@
 
 ## Misc
 
-- [ReactJS routes](https://medium.com/@subalerts/creating-protected-routes-in-react-js-89e95974a822) - creating protected routes in React JS;
 - [React auth](https://medium.com/better-programming/building-basic-react-authentication-e20a574d5e71) - building basic react authentication;
 - [Awesome React](https://github.com/enaqx/awesome-react) - collection of awesome things regarding the React ecosystem;
