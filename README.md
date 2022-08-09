@@ -1,5 +1,5 @@
-<h1 style="text-align: center">Frontend</h1>
-<p  style="text-align: center">Roadman of Frontend! 📜</p>
+<h1 align="center">Frontend</h1>
+<p align="center">Roadman of Frontend! 📜</p>
 
 - [HTML](https://github.com/mrshuhrat/frontend-roadmap/blob/main/docs/HTML.md)
 - [CSS](https://github.com/mrshuhrat/frontend-roadmap/blob/main/docs/CSS.md)
