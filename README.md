@@ -28,10 +28,10 @@ short enough to use. And it is **not** a job guarantee; it's a map, you still
 have to walk it.
 
 > [!TIP]
-> **Start here.** If you want a path, work down the Contents table from the top —
-> Foundations first, then everything else. If you want a reference, jump straight
-> to the topic file you need. An ordered `ROADMAP.md` with time estimates is
-> coming soon.
+> **Start here.** If you want a path, follow [ROADMAP.md](ROADMAP.md) — five
+> ordered stages with prerequisites, projects to build, self-assessment
+> checklists, and time estimates. If you want a reference, jump straight to the
+> topic file you need from the Contents table below.
 
 ## Contents
 
