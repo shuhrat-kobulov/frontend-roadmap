@@ -1,17 +1,17 @@
 # Git
 
-## Main
+Documentation, cheatsheets, and interactive tutorials for learning Git.
+Part of the [Frontend Roadmap](../README.md).
 
-[Offical Site](https://git-scm.com/) - offical documentation with system;
+## Reference
 
-## Cheatsheet
+- [Official Site](https://git-scm.com/) — Official documentation, and the system itself.
+- [Git](https://education.github.com/git-cheat-sheet-education.pdf) — Git cheat sheet.
+- [Git Hint](https://git-hint.netlify.app/) — Not just another Git cheat sheet.
 
-- [Git](https://education.github.com/git-cheat-sheet-education.pdf) - git cheat sheet;
-- [Git Hint](https://git-hint.netlify.app/) - not just another git cheat sheet;
+## Practice
 
-## Services
-
-- [Git How To](https://githowto.com/) - guided tour that walks through the fundamentals of Git;
-- [Git Command Explorer](https://gitexplorer.com/) - list of git commands;
-- [Learn Git Branching](https://learngitbranching.js.org/) - git online tutorial;
-- [Visualize Git](https://git-school.github.io/visualizing-git/) - visualizations git powered by D3;
+- [Git How To](https://githowto.com/) — Guided tour that walks through the fundamentals of Git.
+- [Git Command Explorer](https://gitexplorer.com/) — List of Git commands.
+- [Learn Git Branching](https://learngitbranching.js.org/) — Git online tutorial.
+- [Visualize Git](https://git-school.github.io/visualizing-git/) — Git visualizations powered by D3.

@@ -42,11 +42,11 @@ body:
     attributes:
       label: Which section?
       options:
-        - Main
-        - Cheatsheet
-        - Examples
-        - Services
-        - Github repositories
+        - Learn — tutorials, courses, books, videos
+        - Reference — documentation, cheatsheets, galleries
+        - Practice — games, exercises, templates
+        - Tools — generators, converters, libraries, editors
+        - Deep dives — focused long-form reading
         - Not sure
     validations:
       required: true
@@ -56,9 +56,9 @@ body:
     attributes:
       label: One-line description
       description: |
-        Lowercase, no trailing period — this becomes the text after the ` - `
-        in the list entry.
-      placeholder: game for learning CSS flexbox
+        Starts with a capital letter, ends with a full stop — this becomes the
+        text after the ` — ` in the list entry. See docs/STYLE.md.
+      placeholder: Game for learning CSS flexbox.
     validations:
       required: true
 

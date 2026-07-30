@@ -1,19 +1,19 @@
 # HTML
 
-## Main
+References, validators, and markup guides for writing HTML.
+Part of the [Frontend Roadmap](../README.md).
 
-- [HTML Reference](https://htmlreference.io/) - list of all HTML tags;
-- [W3C Validator](https://validator.w3.org/) - markup validation service;
-- [MarkSheet](https://marksheet.io/) - free HTML and CSS tutorials;
+## Reference
 
-## Cheatsheet
+- [HTML Reference](https://htmlreference.io/) — List of all HTML tags.
+- [W3C Validator](https://validator.w3.org/) — Markup validation service.
+- [MarkSheet](https://marksheet.io/) — Free HTML and CSS tutorials.
+- [BEM Cheatsheet](https://bem-cheat-sheet.9elements.com/) — Simple BEM cheat sheet.
 
-- [BEM Cheatsheet](https://bem-cheat-sheet.9elements.com/) - simple BEM cheat sheet;
+## Practice
 
-## Examples
-
-- [HTML Tips and Tricks](https://yoksel.github.io/bad-practices/) - "bad practies" of HTML;
-- [HTML Rules](https://yoksel.github.io/easy-markup/) - simple markup rules;
-- [HTML Template](https://tpverstak.ru/seo-html-template/) - basic SEO HTML Template;
-- [HTML Academy Style](https://codeguide.academy/html-css.html) - HTML Academy Code Style;
-- [Email Framework](https://emailframe.work/) - build responsive HTML email templates;
+- [HTML Tips and Tricks](https://yoksel.github.io/bad-practices/) — "Bad practices" of HTML. [ru]
+- [HTML Rules](https://yoksel.github.io/easy-markup/) — Simple markup rules. [ru]
+- [HTML Template](https://tpverstak.ru/seo-html-template/) — Basic SEO HTML template. [ru]
+- [HTML Academy Style](https://codeguide.academy/html-css.html) — HTML Academy code style. [ru]
+- [Email Framework](https://emailframe.work/) — Build responsive HTML email templates.

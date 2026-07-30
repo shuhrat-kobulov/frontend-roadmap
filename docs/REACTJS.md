@@ -1,20 +1,23 @@
 # React.js
 
-## Cheatsheet
+Cheatsheets, patterns, and tooling for building React applications.
+Part of the [Frontend Roadmap](../README.md).
 
-- [React Cheatsheet #1](https://reactcheatsheet.com/) - simple react cheat sheet;
-- [React Cheatsheet #2](https://www.freecodecamp.org/news/the-react-cheatsheet-for-2020/) - the React Cheatsheet for 2020;
+## Reference
 
-## Examples
+- [React Cheatsheet #1](https://reactcheatsheet.com/) — Simple React cheat sheet.
+- [React Cheatsheet #2](https://www.freecodecamp.org/news/the-react-cheatsheet-for-2020/) — The React cheatsheet for 2020.
 
-- [useHooks](https://usehooks.com/) - easy to understand React Hook;
-- [Create React App](https://github.com/facebook/create-react-app/) - create React apps with no build configuration;
-- [React Bits](https://vasanthk.gitbooks.io/react-bits/content/) - compilation of React Patterns, techniques, tips and tricks;
-- [React Sight](https://github.com/React-Sight/React-Sight) - live view of the component hierarchy tree;
-- [Why Did You Render](https://github.com/welldone-software/why-did-you-render/) - notify you about avoidable re-renders;
-- [Storybook](https://storybook.js.org/) - open source tool for developing UI components in isolation;
+## Practice
 
-## Misc
+- [useHooks](https://usehooks.com/) — Easy-to-understand React hooks.
+- [Create React App](https://github.com/facebook/create-react-app/) — Create React apps with no build configuration.
+- [React Bits](https://vasanthk.gitbooks.io/react-bits/content/) — Compilation of React patterns, techniques, tips and tricks.
+- [React Sight](https://github.com/React-Sight/React-Sight) — Live view of the component hierarchy tree.
+- [Why Did You Render](https://github.com/welldone-software/why-did-you-render/) — Notifies you about avoidable re-renders.
+- [Storybook](https://storybook.js.org/) — Open source tool for developing UI components in isolation.
 
-- [React auth](https://medium.com/better-programming/building-basic-react-authentication-e20a574d5e71) - building basic react authentication;
-- [Awesome React](https://github.com/enaqx/awesome-react) - collection of awesome things regarding the React ecosystem;
+## Deep dives
+
+- [React Auth](https://medium.com/better-programming/building-basic-react-authentication-e20a574d5e71) — Building basic React authentication.
+- [Awesome React](https://github.com/enaqx/awesome-react) — Collection of awesome things regarding the React ecosystem.

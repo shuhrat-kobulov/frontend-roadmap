@@ -8,8 +8,8 @@ to someone learning frontend.
 
 - **Free or freemium** — the core value must be usable without paying.
 - **Actively maintained** — the site works, the content is not years out of date.
-- **In English**, or clearly labeled otherwise. Follow the existing convention
-  and suffix the title, e.g. `[Flexbox Guide EN](...)`.
+- **In English**, or clearly labeled otherwise with a language tag, e.g.
+  `- [Learn JS](https://learn.javascript.ru/) — Modern JavaScript tutorial. [ru]`.
 - **Focused** — one tool, tutorial, reference, game, or cheatsheet per entry.
 
 ## What does not
@@ -22,53 +22,53 @@ to someone learning frontend.
 
 ## Entry format
 
-Every entry is a single-line list item, exactly:
+The format is defined in one place — [docs/STYLE.md](docs/STYLE.md). Read it
+before you open a PR. Every entry is a single-line list item:
 
 ```markdown
-- [Title](https://example.com/) - lowercase description of what it is;
+- [Title](https://example.com/) — Description of what it is.
 ```
 
 Real examples from [docs/CSS.md](docs/CSS.md):
 
 ```markdown
-- [CSS Reference #1](https://cssreference.io/) - list of all CSS properties;
-- [Flexbox Froggy](https://flexboxfroggy.com/) - game for learning CSS flexbox;
-- [Clippy](https://bennettfeely.com/clippy/) - CSS clip-path maker;
+- [CSS Reference #1](https://cssreference.io/) — List of all CSS properties.
+- [Flexbox Froggy](https://flexboxfroggy.com/) — Game for learning CSS flexbox.
+- [Clippy](https://bennettfeely.com/clippy/) — CSS clip-path maker.
 ```
 
-The rules, precisely:
+The three things people get wrong most often:
 
-1. The line starts with `- ` (hyphen, one space).
-2. The title is in Title Case, inside `[...]`. If two resources share a name,
-   disambiguate with ` #1`, ` #2` — see `CSS Reference #1` above.
-3. The URL goes in `(...)`, `https://` where the site supports it, and no
-   tracking or referral parameters.
-4. The title and the description are separated by ` - ` — a space, a single
-   hyphen, a space. Not an en dash, not a colon.
-5. The description is short, lowercase (except proper nouns like `CSS`,
-   `JavaScript`, `D3`), and describes what the resource *is* — not why you like
-   it. No trailing period.
-6. **The line ends with a semicolon `;`.** Every entry, including the last one
-   in a section.
+1. The separator is ` — `, an **em dash** with a space either side. Not a
+   hyphen, not an en dash, not a colon.
+2. The description **starts with a capital letter and ends with a full stop**.
+   Entries used to end with a semicolon; they no longer do.
+3. Tags come after the full stop, and only from the closed vocabulary in the
+   style guide: `[freemium]` `[paid]`, `[beginner]` `[intermediate]`
+   `[advanced]`, `[ru]` `[uz]`. Free and English are the defaults and are never
+   tagged. If you are not sure a tag applies, leave it off.
 
 ## Where to add it
 
 - Pick the file that matches the topic: `docs/HTML.md`, `docs/CSS.md`,
   `docs/JAVASCRIPT.md`, `docs/REACTJS.md`, `docs/TYPESCRIPT.md`,
   `docs/DESIGN.md`, `docs/UI-FRAMEWORKS.md`, `docs/GIT.md`, `docs/YOUTUBE.md`.
-- Pick the section inside it: `## Main` for references and documentation,
-  `## Cheatsheet`, `## Examples` for interactive or hands-on material,
-  `## Services` for tools and generators, `## Github repositories`.
+- Pick the section inside it. The section names are fixed: `## Learn` for
+  tutorials, courses, and videos; `## Reference` for documentation, cheatsheets,
+  and galleries; `## Practice` for games, exercises, and templates; `## Tools`
+  for generators, converters, and libraries; `## Deep dives` for focused
+  long-form reading.
 - **Append to the end of the section.** The lists are not alphabetical, and
   reordering them makes diffs unreadable.
 
 ## Proposing a new section or file
 
-Open an issue first so we can agree on the shape before you write it. A new
-`## Section` inside an existing file needs three or more entries to be worth
-having — otherwise put them in the closest existing section. A whole new
+Open an issue first so we can agree on the shape before you write it. The five
+`## ` section names are fixed, so what you are usually proposing is a `### `
+subgroup inside `## Tools` — and that needs three or more entries to be worth
+having. Otherwise put them in the closest existing section. A whole new
 `docs/*.md` file also needs a link added to the Contents list in `README.md`,
-under the group it belongs to (Main, Design, Tools, or Additional).
+under the group it belongs to (Core, Design, Tools, or Additional).
 
 ## Reporting a dead link
 
@@ -82,7 +82,8 @@ saying what happened to it.
 
 - [ ] I opened the link in a fresh browser session and it loads.
 - [ ] It is free to use and needs no signup.
-- [ ] The line matches the format above, semicolon included.
+- [ ] The line matches [docs/STYLE.md](docs/STYLE.md): em dash, capitalized
+      description, full stop, tags only from the fixed vocabulary.
 - [ ] One resource per line, appended to the end of the right section.
 - [ ] I searched the repo and this resource is not already listed.
 - [ ] I did not reorder or reformat any unrelated lines.

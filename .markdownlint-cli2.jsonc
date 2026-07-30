@@ -10,7 +10,7 @@
     "default": true,
 
     // MD013 line-length — off.
-    // CONTRIBUTING.md mandates one entry per line: "- [Title](url) - description;".
+    // docs/STYLE.md mandates one entry per line: "- [Title](url) — Description."
     // A URL plus a description simply does not fit in 80 columns, and wrapping
     // would break the format. 76 of the repo's 100 default violations are this
     // rule alone.
@@ -32,28 +32,19 @@
     // MD034 no-bare-urls — off.
     // Sole violation is the Contributor Covenant's bare contact email in
     // CODE_OF_CONDUCT.md:39. markdownlint-cli2 has no per-file rule override, so
-    // this is off repo-wide. The entry format in CONTRIBUTING.md is the real
+    // this is off repo-wide. The entry format in docs/STYLE.md is the real
     // guard against bare URLs sneaking into docs/.
     "MD034": false,
 
     // MD038 no-space-in-code — off.
-    // CONTRIBUTING.md documents literal syntax in code spans, e.g. `- ` and ` #1`,
-    // where the space is the point of the example.
-    "MD038": false,
+    // CONTRIBUTING.md and docs/STYLE.md document literal syntax in code spans,
+    // e.g. `- ` and ` #1`, where the space is the point of the example.
+    "MD038": false
 
-    // ---------------------------------------------------------------------------
-    // The two below are NOT intentional style — they are docs/TYPESCRIPT.md being
-    // inconsistent with the other eight docs files. They are disabled only because
-    // this task may not touch content. Once TYPESCRIPT.md is normalised (h3 -> h2,
-    // "-   " -> "- "), delete both lines and the rules come back on.
-    // ---------------------------------------------------------------------------
-
-    // MD001 heading-increment — docs/TYPESCRIPT.md jumps h1 -> h3.
-    "MD001": false,
-
-    // MD030 list-marker-space — docs/TYPESCRIPT.md uses "-   " (3 spaces);
-    // every other file uses "- " (1 space).
-    "MD030": false
+    // MD001 heading-increment and MD030 list-marker-space used to be disabled
+    // here because docs/TYPESCRIPT.md jumped h1 -> h3 and used "-   " (3 spaces).
+    // Both were fixed when docs/STYLE.md was applied repo-wide, so both rules are
+    // back on — they are now what stops the drift from returning.
   },
 
   // LICENSE is not Markdown; node_modules is not ours.

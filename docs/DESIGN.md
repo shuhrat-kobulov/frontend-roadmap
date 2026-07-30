@@ -1,68 +1,73 @@
 # Design
 
-## Colors & Gradients
+Color, type, imagery, icons, and the tools for putting them together.
+Part of the [Frontend Roadmap](../README.md).
 
-- [UI Gradients](https://uigradients.com/) - create beautiful CSS background gradient;
-- [Web Gradients](https://webgradients.com/) - free collection of 180 linear gradients;
-- [Trainglify](https://trianglify.io/) - low poly pattern generator;
-- [Color Hunt](https://colorhunt.co/) - color palettes for designers and artists;
-- [Coolors](https://coolors.co/) - super fast color schemes generator;
-- [GRAF1X](https://graf1x.com/) - beautiful color palettes;
+## Reference
 
-## Fonts
+- [Mockplus](https://www.mockplus.com/) — All-in-one product design platform for prototyping, collaboration, and design systems. [freemium]
+- [Media Queries](https://mediaqueri.es/) — Examples of media queries.
+- [Call To Idea](https://www.calltoidea.com/) — Light up your imagination.
+- [Daily Design](https://www.uidesigndaily.com/) — Daily UI design components and pages.
 
-- [Google Fonts](https://fonts.google.com/) - google fonts;
-- [Font Squirrel](https://www.fontsquirrel.com/) - free fonts have met their match;
-- [Fonts For Designers](https://www.creativebloq.com/graphic-design-tips/best-free-fonts-for-designers-1233380) - 81 best free fonts for designers;
+## Tools
 
-## Images & Illustrations
+### Colors & gradients
 
-- [unDraw](https://undraw.co/) - open-source illustrations for any idea you can imagine and create;
-- [Unsplash](https://unsplash.com/) - internet source of freely usable images;
-- [Pixabay](https://pixabay.com/) - over 1 million of high quality stock images and videos;
-- [Pexels](https://www.pexels.com/) - the best free stock photos & videos;
-- [Coverr](https://coverr.co/) - beautiful free stock video footage;
-- [Videezy](https://www.videezy.com/) - free HD stock footage & 4K videos;
-- [Fakeimg](https://fakeimg.pl/) - tool that generates images with a URL;
-- [Image Placeholder](https://placeholder.com/) - free image placeholder;
+- [UI Gradients](https://uigradients.com/) — Create beautiful CSS background gradient.
+- [Web Gradients](https://webgradients.com/) — Free collection of 180 linear gradients.
+- [Trianglify](https://trianglify.io/) — Low poly pattern generator.
+- [Color Hunt](https://colorhunt.co/) — Color palettes for designers and artists.
+- [Coolors](https://coolors.co/) — Super fast color schemes generator. [freemium]
+- [GRAF1X](https://graf1x.com/) — Beautiful color palettes.
 
-## Figma templates
+### Fonts
 
-- [Free Design Resources](https://freedesignresources.net/) - high quality design resources for free;
-- [Figma Crush](https://www.figmacrush.com/) - the biggest collection of free resources for figma;
-- [UI Store Design](https://www.uistore.design/types/figma/) - free figma design resources;
-- [Figma Finder](https://www.figmafinder.com/) - figma resources & UI kits;
+- [Google Fonts](https://fonts.google.com/) — Google fonts.
+- [Font Squirrel](https://www.fontsquirrel.com/) — Free fonts have met their match.
+- [Fonts For Designers](https://www.creativebloq.com/graphic-design-tips/best-free-fonts-for-designers-1233380) — 81 best free fonts for designers.
 
-## Icons
+### Images & illustrations
 
-- [Flaticon](https://www.flaticon.com/) - the largest database of free icons;
-- [Ionicons](https://ionic.io/ionicons) - beautifully crafted open source icons;
-- [Font Awesome](https://fontawesome.com/) - vector icons and social logos;
-- [Iconmonstr](https://iconmonstr.com/) - more 4500+ free icons;
-- [Favicon Generator](https://realfavicongenerator.net/) - simple favicon generator;
+- [unDraw](https://undraw.co/) — Open-source illustrations for any idea you can imagine and create.
+- [Unsplash](https://unsplash.com/) — Internet source of freely usable images.
+- [Pixabay](https://pixabay.com/) — Over 1 million high-quality stock images and videos.
+- [Pexels](https://www.pexels.com/) — The best free stock photos & videos.
+- [Coverr](https://coverr.co/) — Beautiful free stock video footage.
+- [Videezy](https://www.videezy.com/) — Free HD stock footage & 4K videos.
+- [Fakeimg](https://fakeimg.pl/) — Tool that generates images with a URL.
+- [Image Placeholder](https://placeholder.com/) — Free image placeholder.
 
-## Design systems
+### Figma templates
 
-- [Mockplus](https://www.mockplus.com/) - all-in-one product design platform for prototyping, collaboration, and design systems;
-- [Media Queries](https://mediaqueri.es/) - examples of media queries;
-- [Call To Idea](https://www.calltoidea.com/) - light up your imagination;
-- [Daily Design](https://www.uidesigndaily.com/) - daily UI design components and pages;
+- [Free Design Resources](https://freedesignresources.net/) — High quality design resources for free.
+- [Figma Crush](https://www.figmacrush.com/) — The biggest collection of free resources for Figma.
+- [UI Store Design](https://www.uistore.design/types/figma/) — Free Figma design resources.
+- [Figma Finder](https://www.figmafinder.com/) — Figma resources & UI kits.
 
-## IDE
+### Icons
 
-- [Photopea](https://www.photopea.com/) - free online editor supporting PSD, XCF, Sketch, XD and CDR formats;
-- [Figma](https://www.figma.com/) - cloud-based design tool;
-- [Sizzy](https://sizzy.co/) - the browser for developers;
+- [Flaticon](https://www.flaticon.com/) — The largest database of free icons. [freemium]
+- [Ionicons](https://ionic.io/ionicons) — Beautifully crafted open source icons.
+- [Font Awesome](https://fontawesome.com/) — Vector icons and social logos. [freemium]
+- [Iconmonstr](https://iconmonstr.com/) — More than 4500 free icons.
+- [Favicon Generator](https://realfavicongenerator.net/) — Simple favicon generator.
 
-## Services
+### Editors
 
-- [Font Size Conversion](https://websemantics.co.uk/tools/font-size-conversion-pixel-point-em-rem-percent/) - font size conversion: pixel-point-em-rem-percent;
-- [PNG to ICO Converter](https://convertico.com/) - free online PNG to ICO file converter;
-- [TinyPNG](https://tinypng.com/) - smart PNG and JPEG compression;
-- [Optimizilla](https://imagecompressor.com/) - online image optimizer uses a smart combination of the best optimization;
-- [Favicon](https://favicon.io/) - favicon generators;
-- [Type Scale](https://typescale.com/) - visual type scale calculator;
+- [Photopea](https://www.photopea.com/) — Free online editor supporting PSD, XCF, Sketch, XD, and CDR formats. [freemium]
+- [Figma](https://www.figma.com/) — Cloud-based design tool. [freemium]
+- [Sizzy](https://sizzy.co/) — The browser for developers. [paid]
 
-## Github repositories
+### Converters & optimizers
 
-- [Animockup](https://github.com/alyssaxuu/animockup) - Create animated mockups in your browser and export it;
+- [Font Size Conversion](https://websemantics.co.uk/tools/font-size-conversion-pixel-point-em-rem-percent/) — Font size conversion: pixel, point, em, rem, percent.
+- [PNG to ICO Converter](https://convertico.com/) — Free online PNG to ICO file converter.
+- [TinyPNG](https://tinypng.com/) — Smart PNG and JPEG compression. [freemium]
+- [Optimizilla](https://imagecompressor.com/) — Online image optimizer that uses a smart combination of the best optimization techniques.
+- [Favicon](https://favicon.io/) — Favicon generators.
+- [Type Scale](https://typescale.com/) — Visual type scale calculator.
+
+### Mockups
+
+- [Animockup](https://github.com/alyssaxuu/animockup) — Create animated mockups in your browser and export them.
