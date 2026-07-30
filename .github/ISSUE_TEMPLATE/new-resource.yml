@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Please read [CONTRIBUTING.md](https://github.com/mrshuhrat/frontend-roadmap/blob/main/CONTRIBUTING.md)
+        Please read [CONTRIBUTING.md](https://github.com/shuhrat-kobulov/frontend-roadmap/blob/main/CONTRIBUTING.md)
         first — it
         covers what belongs here. If you are ready to open a pull request
         yourself, you can skip this issue and do that instead.

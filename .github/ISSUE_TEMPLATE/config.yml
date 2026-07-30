@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
   - name: Question or general discussion
-    url: https://github.com/mrshuhrat/frontend-roadmap/discussions
+    url: https://github.com/shuhrat-kobulov/frontend-roadmap/discussions
     about: Ask a question, or float an idea for a new section before opening an issue.
   - name: Contributing guide
-    url: https://github.com/mrshuhrat/frontend-roadmap/blob/main/CONTRIBUTING.md
+    url: https://github.com/shuhrat-kobulov/frontend-roadmap/blob/main/CONTRIBUTING.md
     about: What belongs in the list, the entry format, and how to open a good PR.

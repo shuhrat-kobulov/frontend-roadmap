@@ -72,7 +72,7 @@ under the group it belongs to (Main, Design, Tools, or Additional).
 
 ## Reporting a dead link
 
-Open a [broken link issue](https://github.com/mrshuhrat/frontend-roadmap/issues/new?template=broken-link.yml). Include
+Open a [broken link issue](https://github.com/shuhrat-kobulov/frontend-roadmap/issues/new?template=broken-link.yml). Include
 the file, the URL, and what you see when you visit it — a 404, a parked domain,
 and a paywall each get handled differently. A suggested replacement is welcome
 but not required. Please don't open a PR that only deletes a link without
