@@ -1,0 +1,50 @@
+# lychee link-checker configuration
+# Docs: https://lychee.cli.rs/usage/config/
+#
+# This repo is a curated list of ~160 external links. The goal of the config is a
+# check that is red ONLY when a link is genuinely dead — a check that cries wolf
+# gets ignored, and then link rot creeps back in.
+
+#-------------------------------------------------------------------------------
+# What counts as "alive"
+#-------------------------------------------------------------------------------
+# 403 and 429 are bot protection, not death. Sites in this list that serve them to
+# CI runners include unsplash, pexels, npmjs, medium and validator.w3.org. Treating
+# them as failures would make the check permanently red.
+# The 3xx codes are belt-and-braces: lychee follows redirects by default, so these
+# only surface when the redirect chain itself cannot be followed.
+accept = [200, 201, 202, 203, 204, 206, 301, 302, 303, 307, 308, 403, 429]
+
+#-------------------------------------------------------------------------------
+# Politeness — we are hitting ~160 third-party sites from a shared CI IP
+#-------------------------------------------------------------------------------
+max_retries = 3
+timeout = 30
+max_concurrency = 8
+
+# Some hosts reject the default lychee UA outright. Present as a normal browser.
+user_agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+
+#-------------------------------------------------------------------------------
+# Exclusions
+#-------------------------------------------------------------------------------
+# YouTube rate-limits CI runner IP ranges hard and returns consent/captcha
+# interstitials, so it produces false failures regardless of UA. docs/YOUTUBE.md
+# links have to be verified by hand.
+exclude = [
+  '^https?://(www\.)?youtube\.com',
+  '^https?://youtu\.be',
+]
+
+# Never dial private/loopback/link-local addresses from CI.
+exclude_all_private = true
+
+#-------------------------------------------------------------------------------
+# Caching — keeps the weekly scheduled run cheap
+#-------------------------------------------------------------------------------
+cache = true
+max_cache_age = "1d"
+
+# Never cache a "failure" that is really rate-limiting or a transient server
+# error, otherwise one bad run poisons the next one into a false red.
+cache_exclude_status = [429, 500, 502, 503, 504]

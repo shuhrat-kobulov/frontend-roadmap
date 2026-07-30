@@ -1,0 +1,4 @@
+# lychee link checker artifacts, produced when running the link check locally.
+# CI regenerates both on every run; neither belongs in the repo.
+.lycheecache
+lychee/

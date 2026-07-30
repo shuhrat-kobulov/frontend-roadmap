@@ -1,0 +1,64 @@
+// markdownlint-cli2 configuration
+// Docs: https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md
+//
+// This config is deliberately shaped around the style the repo ALREADY uses.
+// Every rule disabled below was disabled because existing content violates it on
+// purpose (or because fixing it means rewriting content, which is out of scope
+// for a lint config). Rules NOT listed here stay on and are enforced.
+{
+  "config": {
+    "default": true,
+
+    // MD013 line-length — off.
+    // CONTRIBUTING.md mandates one entry per line: "- [Title](url) - description;".
+    // A URL plus a description simply does not fit in 80 columns, and wrapping
+    // would break the format. 76 of the repo's 100 default violations are this
+    // rule alone.
+    "MD013": false,
+
+    // MD033 inline-HTML — restricted, not off.
+    // README.md centers its banner with <h3 align="center"> and <p align="center">,
+    // which Markdown cannot express. Allow that idiom and the tags that normally
+    // travel with it; anything else still gets flagged.
+    "MD033": {
+      "allowed_elements": ["h1", "h2", "h3", "p", "img", "a", "div", "br"]
+    },
+
+    // MD041 first-line-heading — off.
+    // README.md opens with the banner image (standard for a list repo) and
+    // .github/PULL_REQUEST_TEMPLATE.md opens at h2 by design.
+    "MD041": false,
+
+    // MD034 no-bare-urls — off.
+    // Sole violation is the Contributor Covenant's bare contact email in
+    // CODE_OF_CONDUCT.md:39. markdownlint-cli2 has no per-file rule override, so
+    // this is off repo-wide. The entry format in CONTRIBUTING.md is the real
+    // guard against bare URLs sneaking into docs/.
+    "MD034": false,
+
+    // MD038 no-space-in-code — off.
+    // CONTRIBUTING.md documents literal syntax in code spans, e.g. `- ` and ` #1`,
+    // where the space is the point of the example.
+    "MD038": false,
+
+    // ---------------------------------------------------------------------------
+    // The two below are NOT intentional style — they are docs/TYPESCRIPT.md being
+    // inconsistent with the other eight docs files. They are disabled only because
+    // this task may not touch content. Once TYPESCRIPT.md is normalised (h3 -> h2,
+    // "-   " -> "- "), delete both lines and the rules come back on.
+    // ---------------------------------------------------------------------------
+
+    // MD001 heading-increment — docs/TYPESCRIPT.md jumps h1 -> h3.
+    "MD001": false,
+
+    // MD030 list-marker-space — docs/TYPESCRIPT.md uses "-   " (3 spaces);
+    // every other file uses "- " (1 space).
+    "MD030": false
+  },
+
+  // LICENSE is not Markdown; node_modules is not ours.
+  "ignores": [
+    "node_modules/**",
+    ".git/**"
+  ]
+}

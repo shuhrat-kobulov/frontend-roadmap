@@ -1,0 +1,116 @@
+name: Link Check
+
+# This repo is a curated list of ~160 external links, so link rot is THE failure
+# mode. Nothing was watching for it before; a July 2026 audit found 14 dead links
+# and 14 more that had silently moved.
+#
+# Behaviour differs by trigger on purpose:
+#   pull_request / workflow_dispatch -> just fail the check. A human is already
+#                                       looking at the run output.
+#   schedule                         -> nobody is watching, so file the result as
+#                                       a GitHub issue instead.
+on:
+  pull_request:
+    paths:
+      - '**/*.md'
+      - lychee.toml
+      - .github/workflows/link-check.yml
+  schedule:
+    # Mondays at 06:00 UTC.
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+
+# Default for the whole workflow. The scheduled job below opts itself up to
+# `issues: write`; no other job gets it.
+permissions:
+  contents: read
+
+concurrency:
+  group: link-check-${{ github.event_name }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # ---------------------------------------------------------------------------
+  # Pull requests and manual runs: fail loudly, file nothing.
+  # ---------------------------------------------------------------------------
+  check:
+    name: Check links
+    if: github.event_name != 'schedule'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Restore lychee cache
+        uses: actions/cache@v4
+        with:
+          path: .lycheecache
+          # Cache entries are immutable, so the key is per-commit and the
+          # restore-keys prefix pulls the most recent previous cache forward.
+          key: lychee-${{ github.sha }}
+          restore-keys: lychee-
+
+      - name: Check links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # Config (accept codes, retries, excludes, cache) lives in lychee.toml,
+          # which lychee picks up from the repo root automatically.
+          args: --no-progress --verbose './**/*.md'
+          fail: true
+
+  # ---------------------------------------------------------------------------
+  # Weekly scheduled run: never fails the job, reports via an issue instead.
+  # ---------------------------------------------------------------------------
+  scheduled:
+    name: Check links (weekly)
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Restore lychee cache
+        uses: actions/cache@v4
+        with:
+          path: .lycheecache
+          key: lychee-${{ github.sha }}
+          restore-keys: lychee-
+
+      - name: Check links
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --no-progress --verbose './**/*.md'
+          # Must not abort the job — the issue steps below still need to run.
+          fail: false
+
+      # Look for an already-open report so the weekly run updates one issue
+      # rather than opening a fresh one every Monday. Filtering client-side with
+      # jq (rather than `--search`) keeps this exact and avoids GitHub's search
+      # index lagging behind a just-created issue.
+      - name: Find existing report issue
+        id: existing
+        if: steps.lychee.outputs.exit_code != 0
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          number="$(gh issue list --state open --limit 200 --json number,title \
+            --jq 'map(select(.title == "Dead links detected")) | first | .number // empty')"
+          echo "number=${number}" >> "$GITHUB_OUTPUT"
+
+      - name: Open or update "Dead links detected" issue
+        if: steps.lychee.outputs.exit_code != 0
+        uses: peter-evans/create-issue-from-file@v6
+        with:
+          title: Dead links detected
+          content-filepath: ./lychee/out.md
+          # Empty means "create a new issue"; a number means "update that one".
+          issue-number: ${{ steps.existing.outputs.number }}
+          labels: dead-links
