@@ -1,0 +1,94 @@
+name: New resource
+description: Suggest a resource to add to the roadmap
+title: "[New resource]: "
+labels: ["new resource"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please read [CONTRIBUTING.md](https://github.com/mrshuhrat/frontend-roadmap/blob/main/CONTRIBUTING.md)
+        first — it
+        covers what belongs here. If you are ready to open a pull request
+        yourself, you can skip this issue and do that instead.
+
+  - type: input
+    id: url
+    attributes:
+      label: Resource URL
+      placeholder: https://example.com/
+    validations:
+      required: true
+
+  - type: dropdown
+    id: file
+    attributes:
+      label: Which file does it belong in?
+      options:
+        - docs/HTML.md
+        - docs/CSS.md
+        - docs/JAVASCRIPT.md
+        - docs/REACTJS.md
+        - docs/TYPESCRIPT.md
+        - docs/DESIGN.md
+        - docs/UI-FRAMEWORKS.md
+        - docs/GIT.md
+        - docs/YOUTUBE.md
+        - None of these — it needs a new file or section
+    validations:
+      required: true
+
+  - type: dropdown
+    id: section
+    attributes:
+      label: Which section?
+      options:
+        - Main
+        - Cheatsheet
+        - Examples
+        - Services
+        - Github repositories
+        - Not sure
+    validations:
+      required: true
+
+  - type: input
+    id: description
+    attributes:
+      label: One-line description
+      description: |
+        Lowercase, no trailing period — this becomes the text after the ` - `
+        in the list entry.
+      placeholder: game for learning CSS flexbox
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is it better than what's already listed?
+      description: |
+        The list is curated, so new entries have to earn their place. What does
+        this cover that the existing entries don't, or what does it do better?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: free
+    attributes:
+      label: Is it free?
+      options:
+        - Yes — fully free
+        - Freemium — the useful part is free
+        - No — it is paid
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: It works without signing up or handing over an email address.
+          required: true
+        - label: I searched the repo and it is not already listed.
+          required: true

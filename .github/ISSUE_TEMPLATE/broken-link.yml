@@ -1,0 +1,58 @@
+name: Broken link
+description: Report a resource in the list that no longer works
+title: "[Broken link]: "
+labels: ["broken link"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting this. Please check the link once more in a fresh
+        browser session first — some sites break only behind a VPN or an ad blocker.
+
+  - type: dropdown
+    id: file
+    attributes:
+      label: File
+      description: Which file contains the broken link?
+      options:
+        - README.md
+        - docs/HTML.md
+        - docs/CSS.md
+        - docs/JAVASCRIPT.md
+        - docs/REACTJS.md
+        - docs/TYPESCRIPT.md
+        - docs/DESIGN.md
+        - docs/UI-FRAMEWORKS.md
+        - docs/GIT.md
+        - docs/YOUTUBE.md
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: Broken URL
+      description: Copy the URL exactly as it appears in the list.
+      placeholder: https://example.com/
+    validations:
+      required: true
+
+  - type: textarea
+    id: symptom
+    attributes:
+      label: What happens when you visit it?
+      description: |
+        A 404 page, a parked domain, an expired certificate, a redirect to
+        something unrelated, or a paywall that used to not be there.
+      placeholder: Returns a 404. The domain still resolves but the page is gone.
+    validations:
+      required: true
+
+  - type: input
+    id: replacement
+    attributes:
+      label: Suggested replacement
+      description: Optional — a URL that covers the same ground, if you know one.
+      placeholder: https://example.org/
+    validations:
+      required: false
