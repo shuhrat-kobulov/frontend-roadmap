@@ -3,9 +3,8 @@
 ## Main
 
 - [Learn JS](https://learn.javascript.ru/) - modern JavaScript tutorial;
-- [JS Loupe](http://latentflip.com/loupe/) - how to work event loupe;
+- [JS Loupe](https://latentflip.com/loupe/) - how to work event loupe;
 - [You Dont Know JS](https://github.com/getbodya/you-dont-know-js-ru) - series of books about JavaScript;
-- [Javascript Dev Bookmarks](https://github.com/didicodes/javascript-dev-bookmarks) - collection of articles;
 - [Fetch](https://dev.to/connoro7/the-fetch-api-e12) - JavaScript fetch API and using async / await;
 - [Axios](https://github.com/axios/axios) - promise based HTTP client for browser and node.js;
 
@@ -29,19 +28,18 @@
 ## Services
 
 - [Can I Use](https://caniuse.com/) - provides up-to-date browser support tables;
-- [JSON Placeholder](http://jsonplaceholder.typicode.com/) - fake online REST API for testing and prototyping;
+- [JSON Placeholder](https://jsonplaceholder.typicode.com/) - fake online REST API for testing and prototyping;
 - [JSON Editor](https://jsoneditoronline.org/) - json online editor;
 - [JSON Utils](https://jsonutils.com/) - json generate classes service;
-- [Pythontutor](http://www.pythontutor.com/) - visualize code and get live help;
+- [Pythontutor](https://pythontutor.com/) - visualize code and get live help;
 - [Regex](https://regexr.com/) - online tool to learn, build, & test regular expressions;
 - [CDN JS](https://cdnjs.com/) - the best front-end resource CDN for free;
-- [HTML DOM](https://htmldom.dev/) - manage HTML DOM with vanilla JavaScript;
 - [FormValidation](https://formvalidation.io/) - best validation library for JavaScript;
 - [JS Snippets](https://1loc.dev/) - 212 favorite JavaScript utilities;
-- [JavaScript Replacement](http://youmightnotneedjquery.com/) - you might not need jQuery;
+- [JavaScript Replacement](https://youmightnotneedjquery.com/) - you might not need jQuery;
 - [Keycodes](http://keycodes.atjayjo.com/) - keyboard codes;
 
 ## JWT
 
-- [JWT](https://jwt.io/) - JSON web tokens;
+- [JWT](https://www.jwt.io/) - JSON web tokens;
 - [Parse JWT](https://jwt.ms/) - parse JWT;

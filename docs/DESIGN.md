@@ -12,10 +12,8 @@
 ## Fonts
 
 - [Google Fonts](https://fonts.google.com/) - google fonts;
-- [Google Webfonts Helper](https://google-webfonts-helper.herokuapp.com/fonts/) - service for interacting with fonts;
-- [Font Awesome](https://fontawesome.com/) - vector icons and social logos;
 - [Font Squirrel](https://www.fontsquirrel.com/) - free fonts have met their match;
-- [Fonts For Designers](http://www.creativebloq.com/graphic-design-tips/best-free-fonts-for-designers-1233380) - 81 best free fonts for designers;
+- [Fonts For Designers](https://www.creativebloq.com/graphic-design-tips/best-free-fonts-for-designers-1233380) - 81 best free fonts for designers;
 
 ## Images & Illustrations
 
@@ -27,7 +25,6 @@
 - [Videezy](https://www.videezy.com/) - free HD stock footage & 4K videos;
 - [Fakeimg](https://fakeimg.pl/) - tool that generates images with a URL;
 - [Image Placeholder](https://placeholder.com/) - free image placeholder;
-- [Placeimg](https://placeimg.com/) - service to generate image by params;
 
 ## Figma templates
 
@@ -39,18 +36,17 @@
 ## Icons
 
 - [Flaticon](https://www.flaticon.com/) - the largest database of free icons;
-- [Ionicons](https://ionicons.com/) - beautifully crafted open source icons;
-- [Font Awesome](http://fontawesome.io/) - vector icons and social logos;
+- [Ionicons](https://ionic.io/ionicons) - beautifully crafted open source icons;
+- [Font Awesome](https://fontawesome.com/) - vector icons and social logos;
 - [Iconmonstr](https://iconmonstr.com/) - more 4500+ free icons;
 - [Favicon Generator](https://realfavicongenerator.net/) - simple favicon generator;
-- [ConvertICO](https://convertico.com/favicon/) - free online favicon converter
 
 ## Design systems
 
 - [Mockplus](https://www.mockplus.com/) - all-in-one product design platform for prototyping, collaboration, and design systems;
 - [Media Queries](https://mediaqueri.es/) - examples of media queries;
-- [Call To Idea](http://www.calltoidea.com/) - light up your imagination;
-- [Daily Design](https://uidesigndaily.com/) - daily UI design components and pages;
+- [Call To Idea](https://www.calltoidea.com/) - light up your imagination;
+- [Daily Design](https://www.uidesigndaily.com/) - daily UI design components and pages;
 
 ## IDE
 
@@ -60,13 +56,12 @@
 
 ## Services
 
-- [Design Converter](https://avocode.com/convert-psd-to-sketch) - convert PSD designs to Sketch;
-- [Font Size Conversion](https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/) - font size conversion: pixel-point-em-rem-percent;
+- [Font Size Conversion](https://websemantics.co.uk/tools/font-size-conversion-pixel-point-em-rem-percent/) - font size conversion: pixel-point-em-rem-percent;
 - [PNG to ICO Converter](https://convertico.com/) - free online PNG to ICO file converter;
 - [TinyPNG](https://tinypng.com/) - smart PNG and JPEG compression;
 - [Optimizilla](https://imagecompressor.com/) - online image optimizer uses a smart combination of the best optimization;
 - [Favicon](https://favicon.io/) - favicon generators;
-- [Type Scale](https://type-scale.com/) - visual type scale calculator;
+- [Type Scale](https://typescale.com/) - visual type scale calculator;
 
 ## Github repositories
 
