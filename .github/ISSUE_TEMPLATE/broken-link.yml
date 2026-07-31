@@ -24,7 +24,7 @@ body:
         - docs/DESIGN.md
         - docs/UI-FRAMEWORKS.md
         - docs/GIT.md
-        - docs/YOUTUBE.md
+        - docs/LEARNING.md
     validations:
       required: true
 

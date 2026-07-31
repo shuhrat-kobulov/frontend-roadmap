@@ -29,8 +29,8 @@ user_agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36
 # Exclusions
 #-------------------------------------------------------------------------------
 # YouTube rate-limits CI runner IP ranges hard and returns consent/captcha
-# interstitials, so it produces false failures regardless of UA. docs/YOUTUBE.md
-# links have to be verified by hand.
+# interstitials, so it produces false failures regardless of UA. The channel links
+# in docs/LEARNING.md have to be verified by hand.
 exclude = [
   '^https?://(www\.)?youtube\.com',
   '^https?://youtu\.be',

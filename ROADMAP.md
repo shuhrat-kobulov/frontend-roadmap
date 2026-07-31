@@ -3,8 +3,9 @@
 An ordered path from zero to employable frontend developer, in five stages.
 Part of the [Frontend Roadmap](README.md).
 
-The [topic files](README.md#contents) tell you *what to read*. This file tells you
-*in what order*, *when to stop*, and *what to build in between*. It is
+The [topic files](README.md#contents) tell you *what to read* and
+[docs/LEARNING.md](docs/LEARNING.md) tells you *where to learn it*. This file tells
+you *in what order*, *when to stop*, and *what to build in between*. It is
 deliberately opinionated: at every fork it names one default and explains when to
 pick something else. A roadmap that lists every option is just the search results
 page again.
@@ -74,9 +75,10 @@ stage assumes you can do that without thinking about it.
 5. JavaScript fundamentals: values, functions, arrays, objects, control flow — [docs/JAVASCRIPT.md#learn](docs/JAVASCRIPT.md#learn)
 6. Git: commit, branch, merge, resolve a conflict — [docs/GIT.md#practice](docs/GIT.md#practice)
 
-Set your editor up once and stop fiddling with it —
-[docs/YOUTUBE.md#learn](docs/YOUTUBE.md#learn). Browser devtools† you learn by
-using: keep the Elements and Console panels open from day one.
+Set your editor up once and stop fiddling with it — VS Code with a formatter and a
+linter ([docs/TOOLING.md#tools](docs/TOOLING.md#tools)) is the whole requirement at
+this stage. Browser devtools† you learn by using: keep the Elements and Console
+panels open from day one.
 
 **Build** — two things, both deployed to a public URL:
 

@@ -59,7 +59,7 @@ have to walk it.
 | [Design](docs/DESIGN.md) | Colours, fonts, icons, illustrations, mockups, Figma templates, optimizers. | All levels |
 | [UI Frameworks](docs/UI-FRAMEWORKS.md) | Component libraries and CSS frameworks. | Intermediate |
 | **📺 Beyond code** | | |
-| [YouTube Videos](docs/YOUTUBE.md) | Channels and talks worth watching end to end. | All levels |
+| [Learning](docs/LEARNING.md) | Curricula, docs, channels, courses, books, and communities. | All levels |
 | AI tools | Assistants and workflows for frontend work. | _(coming soon)_ |
 | Practice projects | Briefs and challenges to build from scratch. | _(coming soon)_ |
 

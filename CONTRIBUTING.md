@@ -52,7 +52,7 @@ The three things people get wrong most often:
 
 - Pick the file that matches the topic: `docs/HTML.md`, `docs/CSS.md`,
   `docs/JAVASCRIPT.md`, `docs/REACTJS.md`, `docs/TYPESCRIPT.md`,
-  `docs/DESIGN.md`, `docs/UI-FRAMEWORKS.md`, `docs/GIT.md`, `docs/YOUTUBE.md`.
+  `docs/DESIGN.md`, `docs/UI-FRAMEWORKS.md`, `docs/GIT.md`, `docs/LEARNING.md`.
 - Pick the section inside it. The section names are fixed: `## Learn` for
   tutorials, courses, and videos; `## Reference` for documentation, cheatsheets,
   and galleries; `## Practice` for games, exercises, and templates; `## Tools`
