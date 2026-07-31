@@ -1,9 +1,10 @@
 # JavaScript
 
-Courses, references, and deep dives for the JavaScript language and the runtimes it runs in.
+Courses, references, and deep dives for the JavaScript language itself.
 Part of the [Frontend Roadmap](../README.md).
-See also [Tooling](TOOLING.md) for package managers, bundlers, and linters, and
-[TypeScript](TYPESCRIPT.md) for static types on top of the language.
+See also [Tooling](TOOLING.md) for package managers, bundlers, linters, and the
+runtimes that execute it, and [TypeScript](TYPESCRIPT.md) for static types on top
+of the language.
 
 ## Learn
 
@@ -61,17 +62,10 @@ See also [Tooling](TOOLING.md) for package managers, bundlers, and linters, and
 - [Top-Level Await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await#top_level_await) — Awaiting at the top of a module, and what it does to load order.
 - [esm.sh](https://esm.sh/) — CDN that serves any npm package as an ES module.
 
-### Runtimes
-
-- [Node.js](https://nodejs.org/learn) — Official guides for the default runtime, and the one every tool targets.
-- [Bun](https://bun.com/) — Runtime, bundler, and test runner in one binary; quickest to start a script in.
-- [Deno](https://deno.com/) — Runtime with TypeScript, a permissions model, and a standard library built in.
-
 ### Debugging
 
 - [Chrome DevTools](https://developer.chrome.com/docs/devtools) — Documentation for every panel in Chrome's developer tools.
 - [Debug JavaScript](https://developer.chrome.com/docs/devtools/javascript) — Setting breakpoints, stepping through code, and watching values.
-- [Source Maps](https://developer.chrome.com/docs/devtools/javascript/source-maps) — Mapping a stack trace in bundled code back to the source you wrote.
 - [JavaScript Errors](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors) — Every built-in error message, with what actually causes it.
 
 ## Practice
