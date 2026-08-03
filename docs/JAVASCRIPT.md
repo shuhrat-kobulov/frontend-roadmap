@@ -3,8 +3,9 @@
 Courses, references, and deep dives for the JavaScript language itself.
 Part of the [Frontend Roadmap](../README.md).
 See also [Tooling](TOOLING.md) for package managers, bundlers, linters, and the
-runtimes that execute it, and [TypeScript](TYPESCRIPT.md) for static types on top
-of the language.
+runtimes that execute it, [TypeScript](TYPESCRIPT.md) for static types on top
+of the language, and [Security](SECURITY.md) for XSS, tokens, and the JWT tooling
+that used to live here.
 
 ## Learn
 
@@ -95,14 +96,6 @@ of the language.
 - [Apex Charts](https://apexcharts.com/) — Modern & interactive open-source charts.
 - [Chart JS](https://www.chartjs.org/) — Simple yet flexible JavaScript charting.
 - [D3](https://d3js.org/) — Low-level toolkit for visualizations no chart library covers.
-
-### JWT
-
-Tokens are an API mechanism. For a browser session, an httpOnly `SameSite` cookie
-is usually the right default.
-
-- [JWT](https://www.jwt.io/) — JSON Web Tokens.
-- [Parse JWT](https://jwt.ms/) — Parse a JWT.
 
 ## Deep dives
 
