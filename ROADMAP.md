@@ -1,5 +1,7 @@
 # Roadmap
 
+[English](ROADMAP.md) · [O'zbekcha](ROADMAP.uz.md)
+
 An ordered path from zero to employable frontend developer, in five stages.
 Part of the [Frontend Roadmap](README.md).
 

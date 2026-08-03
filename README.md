@@ -11,6 +11,8 @@
 ![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
 ![Resources: 149](https://img.shields.io/badge/resources-149-orange)
 
+[English](README.md) · [O'zbekcha](README.uz.md)
+
 </div>
 
 ## What this is
