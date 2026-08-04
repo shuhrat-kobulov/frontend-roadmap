@@ -44,9 +44,6 @@ flowchart TD
   you've read the links. The checklists are written as actions for that reason.
 - **Time estimates assume ~10–15 hours a week** and are ranges because prior
   experience swings them enormously. End to end this is roughly 8–12 months.
-- **Topics marked †** have no file in `docs/` yet — they appear on the
-  [Contents](README.md#contents) table as *coming soon*. Until they land, the
-  topic name is your search term.
 
 ## If you already know something
 
@@ -81,8 +78,9 @@ stage assumes you can do that without thinking about it.
 
 Set your editor up once and stop fiddling with it — VS Code with a formatter and a
 linter ([docs/TOOLING.md#tools](docs/TOOLING.md#tools)) is the whole requirement at
-this stage. Browser devtools† you learn by using: keep the Elements and Console
-panels open from day one.
+this stage. Browser devtools
+([docs/TOOLING.md#debugging-and-inspection](docs/TOOLING.md#debugging-and-inspection))
+you learn by using: keep the Elements and Console panels open from day one.
 
 **Build** — two things, both deployed to a public URL:
 
@@ -120,10 +118,10 @@ and enough TypeScript to stop shipping `undefined is not a function`.
 **Learn** — in this order:
 
 1. The event loop, promises, and `async`/`await` — [docs/JAVASCRIPT.md#learn](docs/JAVASCRIPT.md#learn)
-2. The DOM, events, and browser APIs† — the platform under the framework
+2. The DOM, events, and browser APIs ([docs/BROWSER-APIS.md#reference](docs/BROWSER-APIS.md#reference)) — the platform under the framework
 3. HTTP and fetching data, including the failure cases — [docs/JAVASCRIPT.md#learn](docs/JAVASCRIPT.md#learn) and [docs/JAVASCRIPT.md#utilities](docs/JAVASCRIPT.md#utilities)
 4. ES modules, npm, and what a lockfile is for — [docs/JAVASCRIPT.md#node--npm](docs/JAVASCRIPT.md#node--npm)
-5. A modern build tool† — **use Vite**, not the older tools in that list
+5. A modern build tool ([docs/TOOLING.md#build-tools-and-bundlers](docs/TOOLING.md#build-tools-and-bundlers)) — **use Vite**, not the older tools in that list
 6. TypeScript basics — the first four chapters of [docs/TYPESCRIPT.md#learn](docs/TYPESCRIPT.md#learn), and no further yet
 
 > [!WARNING]
@@ -178,7 +176,7 @@ Whichever you pick, finish this stage with it before looking at another.
 2. Hooks, and the rules that govern them — [docs/REACTJS.md#practice](docs/REACTJS.md#practice)
 3. Component architecture and composition patterns — [docs/REACTJS.md#practice](docs/REACTJS.md#practice) and [docs/REACTJS.md#deep-dives](docs/REACTJS.md#deep-dives)
 4. Why things re-render, and how to see it — [docs/REACTJS.md#practice](docs/REACTJS.md#practice)
-5. Routing, forms, and server-state fetching† — the three things every real app needs
+5. Routing, forms, and server-state fetching ([docs/REACTJS.md#data-fetching](docs/REACTJS.md#data-fetching)) — the three things every real app needs
 6. Typing components and props — [docs/TYPESCRIPT.md#deep-dives](docs/TYPESCRIPT.md#deep-dives)
 
 Reach for a component library ([docs/UI-FRAMEWORKS.md#tools](docs/UI-FRAMEWORKS.md#tools))
@@ -226,11 +224,11 @@ first ten seconds.
 
 **Learn** — in this order:
 
-1. Accessibility† — keyboard operability, focus management, accessible names, and when ARIA is the wrong answer
-2. Performance and Core Web Vitals† — measure first; check dependency cost with [docs/JAVASCRIPT.md#node--npm](docs/JAVASCRIPT.md#node--npm) and image weight with [docs/DESIGN.md#converters--optimizers](docs/DESIGN.md#converters--optimizers)
-3. Testing† — unit, component, and one end-to-end path through the app
-4. Security basics† — XSS, CSP, and where tokens may and may not be stored ([docs/JAVASCRIPT.md#jwt](docs/JAVASCRIPT.md#jwt))
-5. Deployment and CI† — a pipeline, not a person, decides whether main is releasable
+1. Accessibility ([docs/ACCESSIBILITY.md](docs/ACCESSIBILITY.md)) — keyboard operability, focus management, accessible names, and when ARIA is the wrong answer
+2. Performance and Core Web Vitals ([docs/PERFORMANCE.md#core-web-vitals](docs/PERFORMANCE.md#core-web-vitals)) — measure first; check dependency cost with [docs/JAVASCRIPT.md#node--npm](docs/JAVASCRIPT.md#node--npm) and image weight with [docs/DESIGN.md#converters--optimizers](docs/DESIGN.md#converters--optimizers)
+3. Testing ([docs/TESTING.md](docs/TESTING.md)) — unit, component, and one end-to-end path through the app
+4. Security basics ([docs/SECURITY.md](docs/SECURITY.md)) — XSS, CSP, and where tokens may and may not be stored ([docs/JAVASCRIPT.md#jwt](docs/JAVASCRIPT.md#jwt))
+5. Deployment and CI ([docs/DEPLOYMENT.md#cicd](docs/DEPLOYMENT.md#cicd)) — a pipeline, not a person, decides whether main is releasable
 6. Cross-browser reality — check support before you use it, with [docs/JAVASCRIPT.md#utilities](docs/JAVASCRIPT.md#utilities)
 
 **Build** — do not start a new project. Take the stage 3 app and harden it:
@@ -264,7 +262,7 @@ curriculum.
 
 **Time** — 8+ weeks per direction, assuming ~10–15 hours a week; genuinely open-ended.
 
-**Meta-frameworks and SSR†** — the most common next step, and the most hireable.
+**Meta-frameworks and SSR** ([docs/FRAMEWORKS.md#react-meta-frameworks](docs/FRAMEWORKS.md#react-meta-frameworks)) — the most common next step, and the most hireable.
 
 - Server-side rendering, static generation, and streaming: what each costs and what each buys.
 - Data loading on the server, and the boundary between server and client components.
@@ -282,17 +280,17 @@ curriculum.
 
 - Motion principles before syntax — [docs/CSS.md#practice](docs/CSS.md#practice).
 - CSS transitions, keyframes, and what the compositor can animate cheaply — [docs/CSS.md#tools](docs/CSS.md#tools).
-- The Web Animations API and scroll-driven animation† for what CSS cannot express.
+- The Web Animations API ([docs/BROWSER-APIS.md#modern-ui-platform-apis](docs/BROWSER-APIS.md#modern-ui-platform-apis)) and scroll-driven animation ([docs/CSS.md#animation-and-motion](docs/CSS.md#animation-and-motion)) for what CSS cannot express.
 - `prefers-reduced-motion`, always. Motion that cannot be turned off is a bug.
 
 **Data visualisation** — pairs unusually well with backend or analytics work.
 
-- Start with a charting library and learn what it cannot do — [docs/JAVASCRIPT.md#charts](docs/JAVASCRIPT.md#charts).
-- Then learn scales, axes, and data binding from first principles with D3†.
+- Start with a charting library and learn what it cannot do — [docs/JAVASCRIPT.md#data-visualization](docs/JAVASCRIPT.md#data-visualization).
+- Then learn scales, axes, and data binding from first principles with D3 ([docs/JAVASCRIPT.md#data-visualization](docs/JAVASCRIPT.md#data-visualization)).
 - SVG performance, and when to move to canvas.
 - Accessible charts: a table alternative, and never colour as the only encoding.
 
-**React Native and mobile†** — the shortest hop from React to a second platform.
+**React Native and mobile** ([docs/FRAMEWORKS.md#cross-platform](docs/FRAMEWORKS.md#cross-platform)) — the shortest hop from React to a second platform.
 
 - What transfers from React and what does not — layout, navigation, and gestures.
 - Platform differences you cannot abstract away, and the native build toolchain.

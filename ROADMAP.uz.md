@@ -51,9 +51,6 @@ flowchart TD
 - **Vaqt taxminlari haftasiga ~10–15 soatga mo'ljallangan** va oraliq ko'rinishida
   berilgan, chunki oldingi tajriba ularni juda kuchli o'zgartiradi. Boshidan
   oxirigacha bu taxminan 8–12 oy.
-- **† bilan belgilangan mavzular** uchun `docs/` da hali fayl yo'q — ular
-  [Mundarija](README.uz.md#mundarija) jadvalida *tez orada* deb turadi. Ular paydo
-  bo'lguncha mavzu nomining o'zi sizning qidiruv so'rovingiz.
 
 ## Agar allaqachon biror narsani bilsangiz
 
@@ -88,8 +85,10 @@ keyingi hamma narsa buni o'ylab o'tirmasdan qila olishingizni nazarda tutadi.
 
 Muharriringizni bir marta sozlang va u bilan ovora bo'lishni bas qiling — formatter
 va linter o'rnatilgan VS Code ([docs/TOOLING.md#tools](docs/TOOLING.md#tools)) bu
-bosqichdagi butun talab. Brauzer devtools† — uni ishlatib o'rganasiz: birinchi
-kundanoq Elements va Console panellarini ochiq tuting.
+bosqichdagi butun talab. Brauzer devtools
+([docs/TOOLING.md#debugging-and-inspection](docs/TOOLING.md#debugging-and-inspection)) —
+uni ishlatib o'rganasiz: birinchi kundanoq Elements va Console panellarini ochiq
+tuting.
 
 **Quring** — ikkita narsa, ikkalasi ham ochiq URL'ga deploy qilingan:
 
@@ -130,10 +129,10 @@ yaratadigan narsalar haqida: asinxronlik, modullar, paket ekotizimi, build vosit
 **O'rganing** — shu tartibda:
 
 1. Event loop, promise'lar va `async`/`await` — [docs/JAVASCRIPT.md#learn](docs/JAVASCRIPT.md#learn)
-2. DOM, hodisalar va brauzer API'lari† — framework ostidagi platforma
+2. DOM, hodisalar va brauzer API'lari ([docs/BROWSER-APIS.md#reference](docs/BROWSER-APIS.md#reference)) — framework ostidagi platforma
 3. HTTP va ma'lumot olish, xato holatlari bilan birga — [docs/JAVASCRIPT.md#learn](docs/JAVASCRIPT.md#learn) va [docs/JAVASCRIPT.md#utilities](docs/JAVASCRIPT.md#utilities)
 4. ES modullar, npm va lockfile nima uchun kerakligi — [docs/JAVASCRIPT.md#node--npm](docs/JAVASCRIPT.md#node--npm)
-5. Zamonaviy build vositasi† — o'sha ro'yxatdagi eskilarini emas, **Vite'ni ishlating**
+5. Zamonaviy build vositasi ([docs/TOOLING.md#build-tools-and-bundlers](docs/TOOLING.md#build-tools-and-bundlers)) — o'sha ro'yxatdagi eskilarini emas, **Vite'ni ishlating**
 6. TypeScript asoslari — [docs/TYPESCRIPT.md#learn](docs/TYPESCRIPT.md#learn) ning dastlabki to'rt bobi, hozircha undan nariga o'tmang
 
 > [!WARNING]
@@ -190,7 +189,7 @@ tugating.
 2. Hook'lar va ularni boshqaradigan qoidalar — [docs/REACTJS.md#practice](docs/REACTJS.md#practice)
 3. Komponent arxitekturasi va kompozitsiya patternlari — [docs/REACTJS.md#practice](docs/REACTJS.md#practice) va [docs/REACTJS.md#deep-dives](docs/REACTJS.md#deep-dives)
 4. Nima uchun qayta render bo'lishi va buni qanday ko'rish — [docs/REACTJS.md#practice](docs/REACTJS.md#practice)
-5. Routing, formalar va server holatini olish† — har qanday haqiqiy ilovaga kerak bo'ladigan uchta narsa
+5. Routing, formalar va server holatini olish ([docs/REACTJS.md#data-fetching](docs/REACTJS.md#data-fetching)) — har qanday haqiqiy ilovaga kerak bo'ladigan uchta narsa
 6. Komponentlar va props'ni tiplashtirish — [docs/TYPESCRIPT.md#deep-dives](docs/TYPESCRIPT.md#deep-dives)
 
 Ilova qurayotganingizda komponent kutubxonasiga
@@ -240,11 +239,11 @@ birinchi o'n soniyadayoq yiqiladi.
 
 **O'rganing** — shu tartibda:
 
-1. Accessibility† — klaviatura bilan boshqarish, fokusni boshqarish, accessible name'lar va ARIA qachon noto'g'ri javob ekani
-2. Performance va Core Web Vitals† — avval o'lchang; dependency narxini [docs/JAVASCRIPT.md#node--npm](docs/JAVASCRIPT.md#node--npm) bilan, rasm og'irligini [docs/DESIGN.md#converters--optimizers](docs/DESIGN.md#converters--optimizers) bilan tekshiring
-3. Test† — unit, komponent va ilova bo'ylab bitta end-to-end yo'l
-4. Xavfsizlik asoslari† — XSS, CSP va token'larni qayerda saqlash mumkin, qayerda mumkin emasligi ([docs/JAVASCRIPT.md#jwt](docs/JAVASCRIPT.md#jwt))
-5. Deployment va CI† — main relizga tayyormi yoki yo'qmi, buni odam emas, pipeline hal qiladi
+1. Accessibility ([docs/ACCESSIBILITY.md](docs/ACCESSIBILITY.md)) — klaviatura bilan boshqarish, fokusni boshqarish, accessible name'lar va ARIA qachon noto'g'ri javob ekani
+2. Performance va Core Web Vitals ([docs/PERFORMANCE.md#core-web-vitals](docs/PERFORMANCE.md#core-web-vitals)) — avval o'lchang; dependency narxini [docs/JAVASCRIPT.md#node--npm](docs/JAVASCRIPT.md#node--npm) bilan, rasm og'irligini [docs/DESIGN.md#converters--optimizers](docs/DESIGN.md#converters--optimizers) bilan tekshiring
+3. Test ([docs/TESTING.md](docs/TESTING.md)) — unit, komponent va ilova bo'ylab bitta end-to-end yo'l
+4. Xavfsizlik asoslari ([docs/SECURITY.md](docs/SECURITY.md)) — XSS, CSP va token'larni qayerda saqlash mumkin, qayerda mumkin emasligi ([docs/JAVASCRIPT.md#jwt](docs/JAVASCRIPT.md#jwt))
+5. Deployment va CI ([docs/DEPLOYMENT.md#cicd](docs/DEPLOYMENT.md#cicd)) — main relizga tayyormi yoki yo'qmi, buni odam emas, pipeline hal qiladi
 6. Brauzerlararo haqiqat — ishlatishdan oldin qo'llab-quvvatlanishini [docs/JAVASCRIPT.md#utilities](docs/JAVASCRIPT.md#utilities) bilan tekshiring
 
 **Quring** — yangi loyiha boshlamang. 3-bosqichdagi ilovani oling va uni mustahkamlang:
@@ -278,7 +277,7 @@ bir nechta yo'nalgich berilgan.
 
 **Vaqt** — har bir yo'nalish uchun 8+ hafta, haftasiga ~10–15 soat hisobida; aslida chegarasi yo'q.
 
-**Meta-framework'lar va SSR†** — eng ko'p tanlanadigan keyingi qadam va ishga joylashishga eng foydalisi.
+**Meta-framework'lar va SSR** ([docs/FRAMEWORKS.md#react-meta-frameworks](docs/FRAMEWORKS.md#react-meta-frameworks)) — eng ko'p tanlanadigan keyingi qadam va ishga joylashishga eng foydalisi.
 
 - Server-side rendering, statik generatsiya va streaming: har biri nimaga tushadi va nima beradi.
 - Serverda ma'lumot yuklash hamda server va client komponentlari o'rtasidagi chegara.
@@ -296,17 +295,17 @@ bir nechta yo'nalgich berilgan.
 
 - Sintaksisdan oldin harakat prinsiplari — [docs/CSS.md#practice](docs/CSS.md#practice).
 - CSS transition'lar, keyframe'lar va compositor nimani arzon animatsiya qila olishi — [docs/CSS.md#tools](docs/CSS.md#tools).
-- CSS ifodalay olmaydigan narsalar uchun Web Animations API va scroll bilan boshqariladigan animatsiya†.
+- CSS ifodalay olmaydigan narsalar uchun Web Animations API ([docs/BROWSER-APIS.md#modern-ui-platform-apis](docs/BROWSER-APIS.md#modern-ui-platform-apis)) va scroll bilan boshqariladigan animatsiya ([docs/CSS.md#animation-and-motion](docs/CSS.md#animation-and-motion)).
 - `prefers-reduced-motion` — har doim. O'chirib bo'lmaydigan harakat — bu bug.
 
 **Ma'lumot vizualizatsiyasi** — backend yoki analitika ishi bilan g'ayrioddiy darajada yaxshi qo'shiladi.
 
-- Grafik kutubxonasidan boshlang va u nimani qila olmasligini o'rganing — [docs/JAVASCRIPT.md#charts](docs/JAVASCRIPT.md#charts).
-- So'ng shkalalar, o'qlar va data binding'ni D3† bilan asosidan o'rganing.
+- Grafik kutubxonasidan boshlang va u nimani qila olmasligini o'rganing — [docs/JAVASCRIPT.md#data-visualization](docs/JAVASCRIPT.md#data-visualization).
+- So'ng shkalalar, o'qlar va data binding'ni D3 ([docs/JAVASCRIPT.md#data-visualization](docs/JAVASCRIPT.md#data-visualization)) bilan asosidan o'rganing.
 - SVG unumdorligi va qachon canvas'ga o'tish kerakligi.
 - Accessible grafiklar: jadval ko'rinishidagi muqobil, va rang hech qachon yagona belgi bo'lmasin.
 
-**React Native va mobil†** — React'dan ikkinchi platformaga eng qisqa sakrash.
+**React Native va mobil** ([docs/FRAMEWORKS.md#cross-platform](docs/FRAMEWORKS.md#cross-platform)) — React'dan ikkinchi platformaga eng qisqa sakrash.
 
 - React'dan nima o'tadi va nima o'tmaydi — layout, navigatsiya va imo-ishoralar.
 - Yashirib bo'lmaydigan platforma farqlari va native build toolchain'i.
