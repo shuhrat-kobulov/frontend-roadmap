@@ -46,7 +46,7 @@ const topLevel = [
 		label: 'Overview',
 		title: 'Frontend Roadmap',
 		description:
-			'A curated, opinionated path to a free self-taught education in frontend — 149 hand-picked resources, no paywalls and no signup walls.',
+			'A curated, opinionated path to a free self-taught education in frontend — 1200+ hand-picked resources, no paywalls and no signup walls.',
 		// Without this the home page would be titled "Frontend Roadmap | Frontend
 		// Roadmap", since the page title and the site title are the same.
 		head: [

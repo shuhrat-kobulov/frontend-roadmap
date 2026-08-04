@@ -1,7 +1,7 @@
 # lychee link-checker configuration
 # Docs: https://lychee.cli.rs/usage/config/
 #
-# This repo is a curated list of ~160 external links. The goal of the config is a
+# This repo is a curated list of 1200+ external links. The goal of the config is a
 # check that is red ONLY when a link is genuinely dead — a check that cries wolf
 # gets ignored, and then link rot creeps back in.
 
@@ -16,7 +16,7 @@
 accept = [200, 201, 202, 203, 204, 206, 301, 302, 303, 307, 308, 403, 429]
 
 #-------------------------------------------------------------------------------
-# Politeness — we are hitting ~160 third-party sites from a shared CI IP
+# Politeness — 1200+ links across ~480 third-party sites from a shared CI IP
 #-------------------------------------------------------------------------------
 max_retries = 3
 timeout = 30

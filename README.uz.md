@@ -9,7 +9,7 @@
 ![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-blue)
 ![Link check](https://img.shields.io/github/actions/workflow/status/shuhrat-kobulov/frontend-roadmap/link-check.yml?branch=main&label=links)
 ![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
-![Resources: 149](https://img.shields.io/badge/resources-149-orange)
+![Resources: 1200+](https://img.shields.io/badge/resources-1200%2B-orange)
 
 [English](README.md) · [O'zbekcha](README.uz.md)
 
@@ -19,7 +19,7 @@
 
 ## Bu nima
 
-Frontend dasturlashni o'rganish uchun qo'lda saralangan **149 ta bepul resurs** —
+Frontend dasturlashni o'rganish uchun qo'lda saralangan **1200+ ta bepul resurs** —
 mavzular bo'yicha guruhlangan va taxminan duch keladigan tartibda joylashtirilgan.
 Har bir yozuv — ishlayotgan dasturchi haqiqatan ham tavsiya qiladigan narsa: pullik
 devorlar yo'q, ro'yxatdan o'tish talab qilinmaydi, boshqalarning maqolalarini
