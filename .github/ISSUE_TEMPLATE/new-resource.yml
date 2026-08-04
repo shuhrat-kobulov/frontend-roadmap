@@ -27,12 +27,22 @@ body:
         - docs/HTML.md
         - docs/CSS.md
         - docs/JAVASCRIPT.md
-        - docs/REACTJS.md
         - docs/TYPESCRIPT.md
+        - docs/REACTJS.md
+        - docs/FRAMEWORKS.md
+        - docs/ACCESSIBILITY.md
+        - docs/PERFORMANCE.md
+        - docs/SECURITY.md
+        - docs/TESTING.md
+        - docs/BROWSER-APIS.md
+        - docs/GIT.md
+        - docs/TOOLING.md
+        - docs/DEPLOYMENT.md
         - docs/DESIGN.md
         - docs/UI-FRAMEWORKS.md
-        - docs/GIT.md
         - docs/LEARNING.md
+        - docs/AI-TOOLS.md
+        - docs/PRACTICE.md
         - None of these — it needs a new file or section
     validations:
       required: true
@@ -44,8 +54,8 @@ body:
       options:
         - Learn — tutorials, courses, books, videos
         - Reference — documentation, cheatsheets, galleries
-        - Practice — games, exercises, templates
-        - Tools — generators, converters, libraries, editors
+        - Practice — games, exercises, examples, templates
+        - Tools — generators, converters, validators, libraries, editors
         - Deep dives — focused long-form reading
         - Not sure
     validations:
