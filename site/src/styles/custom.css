@@ -1,0 +1,50 @@
+/*
+ * Mermaid diagrams are rendered to SVG at build time, once per colour scheme.
+ * Which one is shown is decided in CSS so it still works with JavaScript off:
+ * the OS preference is the default, and an explicit choice from Starlight's
+ * theme switcher (`data-theme` on the root element) overrides it.
+ */
+.mermaid {
+	margin: 1.5rem 0;
+	overflow-x: auto;
+}
+
+.mermaid svg {
+	display: block;
+	height: auto;
+	margin-inline: auto;
+	max-width: 100%;
+}
+
+.mermaid-diagram[data-variant='dark'] {
+	display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+	.mermaid-diagram[data-variant='light'] {
+		display: none;
+	}
+
+	.mermaid-diagram[data-variant='dark'] {
+		display: block;
+	}
+}
+
+:root[data-theme='light'] .mermaid-diagram[data-variant='light'],
+:root[data-theme='dark'] .mermaid-diagram[data-variant='dark'] {
+	display: block;
+}
+
+:root[data-theme='light'] .mermaid-diagram[data-variant='dark'],
+:root[data-theme='dark'] .mermaid-diagram[data-variant='light'] {
+	display: none;
+}
+
+/*
+ * The Contents table in README.md and the comparison tables in ROADMAP.md are
+ * wide. Let them scroll rather than force the whole page sideways on a phone.
+ */
+.sl-markdown-content table {
+	display: block;
+	overflow-x: auto;
+}

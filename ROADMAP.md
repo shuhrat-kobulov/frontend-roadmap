@@ -14,6 +14,8 @@ page again.
 
 ```mermaid
 flowchart TD
+    accTitle: The five stages of the roadmap
+    accDescr: Stages one to five run in order — Foundations, Real JavaScript, Framework, Production craft — and then stage five branches into six directions: meta-frameworks, design systems, animation, data visualisation, React Native, and web platform depth. Design fundamentals are optional and can be picked up alongside stage one or stage three.
     S1["1 · Foundations<br/>HTML, CSS, JS, Git"]
     S2["2 · Real JavaScript<br/>async, modules, npm, TS"]
     S3["3 · Framework<br/>React in depth"]

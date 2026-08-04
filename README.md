@@ -13,6 +13,8 @@
 
 [English](README.md) · [O'zbekcha](README.uz.md)
 
+**[Read it as a website](https://shuhrat-kobulov.github.io/frontend-roadmap/)** — searchable, with the whole roadmap in one sidebar.
+
 </div>
 
 ## What this is

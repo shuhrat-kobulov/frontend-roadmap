@@ -2,3 +2,9 @@
 # CI regenerates both on every run; neither belongs in the repo.
 .lycheecache
 lychee/
+
+# Build output for the site in site/. The Markdown in this repo is the source of
+# truth; everything below is generated from it on every build.
+node_modules/
+site/dist/
+site/.astro/

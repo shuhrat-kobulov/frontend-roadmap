@@ -47,9 +47,11 @@
     // back on — they are now what stops the drift from returning.
   },
 
-  // LICENSE is not Markdown; node_modules is not ours.
+  // LICENSE is not Markdown; node_modules is not ours; site/dist is generated
+  // from the Markdown that has already been linted.
   "ignores": [
-    "node_modules/**",
+    "**/node_modules/**",
+    "site/dist/**",
     ".git/**"
   ]
 }

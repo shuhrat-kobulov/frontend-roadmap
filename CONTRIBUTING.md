@@ -70,6 +70,20 @@ having. Otherwise put them in the closest existing section. A whole new
 `docs/*.md` file also needs a link added to the Contents list in `README.md`,
 under the group it belongs to (Core, Design, Tools, or Additional).
 
+## The website
+
+The Markdown files are the source of truth. The site at
+<https://shuhrat-kobulov.github.io/frontend-roadmap/> is generated from them by
+the Astro project in `site/`, which reads `README.md`, `ROADMAP.md` and
+`docs/*.md` where they are — there is no second copy of any file.
+
+**You never need to touch `site/`.** Edit the Markdown, open your PR, and the
+page updates itself when it merges. `site/` only changes if you are changing how
+the site is built, and a new `docs/*.md` file needs one line adding to
+`site/src/lib/repo.mjs` so it appears in the sidebar.
+
+To preview the site locally: `cd site && npm install && npm run dev`.
+
 ## Reporting a dead link
 
 Open a [broken link issue](https://github.com/shuhrat-kobulov/frontend-roadmap/issues/new?template=broken-link.yml). Include

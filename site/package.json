@@ -1,0 +1,22 @@
+{
+  "name": "frontend-roadmap-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Static site build for the frontend-roadmap Markdown files. The Markdown in ../docs, ../README.md and ../ROADMAP.md is the source of truth; nothing here duplicates it.",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "postinstall": "playwright install chromium"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "0.41.6",
+    "astro": "7.1.6"
+  },
+  "devDependencies": {
+    "mermaid-isomorphic": "3.1.0",
+    "playwright": "1.62.1",
+    "unist-util-visit": "5.1.0"
+  }
+}

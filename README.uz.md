@@ -13,6 +13,8 @@
 
 [English](README.md) · [O'zbekcha](README.uz.md)
 
+**[Veb-sayt sifatida o'qing](https://shuhrat-kobulov.github.io/frontend-roadmap/uz/)** — qidiruv bilan, butun yo'l xaritasi bitta yon panelda.
+
 </div>
 
 ## Bu nima

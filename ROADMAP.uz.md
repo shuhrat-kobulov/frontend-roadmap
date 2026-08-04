@@ -18,6 +18,8 @@ chiqadigan yo'l xaritasi — o'sha qidiruv natijalari sahifasining o'zi.
 
 ```mermaid
 flowchart TD
+    accTitle: Yo'l xaritasining besh bosqichi
+    accDescr: Birinchidan beshinchi bosqichgacha tartib bilan boradi — Poydevor, Haqiqiy JavaScript, Framework, Ishlab chiqarish mahorati — so'ngra beshinchi bosqich olti yo'nalishga bo'linadi: meta-framework'lar, dizayn tizimlari, animatsiya, ma'lumot vizualizatsiyasi, React Native va web platforma chuqurligi. Dizayn asoslari ixtiyoriy va birinchi yoki uchinchi bosqich bilan birga o'rganilishi mumkin.
     S1["1 · Poydevor<br/>HTML, CSS, JS, Git"]
     S2["2 · Haqiqiy JavaScript<br/>async, modullar, npm, TS"]
     S3["3 · Framework<br/>React chuqur"]

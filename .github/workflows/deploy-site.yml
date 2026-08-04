@@ -1,0 +1,93 @@
+name: Deploy site
+
+# Builds the Astro site in site/ from the Markdown in this repository and
+# publishes it to GitHub Pages. Nothing here is the source of truth: the site is
+# generated from README.md, ROADMAP.md and docs/*.md, so the paths below are
+# every file the build reads.
+#
+# Requires Pages to be set to "GitHub Actions" as its source, in
+# Settings -> Pages.
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'docs/**'
+      - README.md
+      - README.uz.md
+      - ROADMAP.md
+      - ROADMAP.uz.md
+      - CONTRIBUTING.md
+      - CODE_OF_CONDUCT.md
+      - 'site/**'
+      - .github/workflows/deploy-site.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# One deployment at a time, and never cancel one in flight — a half-finished
+# deploy would leave the live site in whatever state it stopped at.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      # The ROADMAP diagram is rendered to SVG at build time by a headless
+      # browser, so the site ships no Mermaid runtime. Caching the browser keeps
+      # that off the critical path of most runs.
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('site/package-lock.json') }}
+
+      - name: Install dependencies
+        working-directory: site
+        run: npm ci
+
+      - name: Install browser system dependencies
+        working-directory: site
+        run: npx playwright install-deps chromium
+
+      - name: Build
+        working-directory: site
+        run: npm run build
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v6
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: site/dist
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

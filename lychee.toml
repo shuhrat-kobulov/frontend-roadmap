@@ -31,9 +31,15 @@ user_agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36
 # YouTube rate-limits CI runner IP ranges hard and returns consent/captcha
 # interstitials, so it produces false failures regardless of UA. The channel links
 # in docs/LEARNING.md have to be verified by hand.
+#
+# The GitHub Pages site is this repository, published by
+# .github/workflows/deploy-site.yml. Its pages do not exist until that workflow
+# has run at least once, and every internal link on it is generated from a single
+# page list, so lychee has nothing useful to say about them.
 exclude = [
   '^https?://(www\.)?youtube\.com',
   '^https?://youtu\.be',
+  '^https://shuhrat-kobulov\.github\.io/frontend-roadmap',
 ]
 
 # Never dial private/loopback/link-local addresses from CI.
