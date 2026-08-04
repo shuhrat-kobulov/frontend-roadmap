@@ -42,30 +42,31 @@ have to walk it.
 | Topic | What's inside | Level |
 | --- | --- | --- |
 | **🧱 Foundations** | | |
-| [HTML](docs/HTML.md) | Semantic markup reference, plus practice exercises. | Beginner |
-| [CSS](docs/CSS.md) | Reference, layout games, and generators for shadows, gradients, and clip paths. | Beginner → Intermediate |
-| [JavaScript](docs/JAVASCRIPT.md) | Courses and books, then Node & npm, charting, utility, and JWT tooling. | Beginner → Advanced |
+| [HTML](docs/HTML.md) | Semantics, forms, modern elements, and metadata, plus validators and practice. | Beginner |
+| [CSS](docs/CSS.md) | The cascade, layout, responsive type and colour, animation, plus layout games and generators. | Beginner → Intermediate |
+| [JavaScript](docs/JAVASCRIPT.md) | Courses and books, then modern syntax, async, modules, debugging, and playgrounds. | Beginner → Advanced |
 | **🔤 Language & types** | | |
-| [TypeScript](docs/TYPESCRIPT.md) | Handbooks to get started, then deep dives on the type system. | Intermediate |
+| [TypeScript](docs/TYPESCRIPT.md) | Handbooks to get started, then the type system, project setup, and typing React. | Intermediate |
 | **⚛️ Frameworks** | | |
-| [React](docs/REACTJS.md) | Official reference, practice projects, and deep dives on rendering and hooks. | Intermediate |
-| Other frameworks & meta-frameworks | Vue, Svelte, Angular, Next.js, Astro. | _(coming soon)_ |
+| [React](docs/REACTJS.md) | Core concepts, hooks, React 19 and Server Components, plus routing, state, and data fetching. | Intermediate |
+| [Other frameworks & meta-frameworks](docs/FRAMEWORKS.md) | How to choose one, rendering strategies, and the Vue, Svelte, Angular, Solid, and Astro ecosystems. | Intermediate |
 | **🛠 Craft** | | |
-| Accessibility | WCAG, screen readers, keyboard navigation, automated audits. | _(coming soon)_ |
-| Performance | Core Web Vitals, bundle budgets, profiling. | _(coming soon)_ |
-| Security | XSS, CSP, auth patterns, dependency hygiene. | _(coming soon)_ |
-| Testing | Unit, component, and end-to-end testing. | _(coming soon)_ |
+| [Accessibility](docs/ACCESSIBILITY.md) | WCAG, semantics, keyboard and focus, screen readers, contrast, and automated audits. | All levels |
+| [Performance](docs/PERFORMANCE.md) | Core Web Vitals, field versus lab data, loading and runtime cost, and profiling tools. | Intermediate → Advanced |
+| [Security](docs/SECURITY.md) | The origin model, XSS, CSP, CORS, auth and sessions, headers, and supply chain. | Intermediate → Advanced |
+| [Testing](docs/TESTING.md) | Unit, component, and end-to-end testing, mocking, visual regression, and CI. | Intermediate |
+| [Browser APIs](docs/BROWSER-APIS.md) | The DOM, observers, storage, networking, workers, service workers, and feature detection. | Intermediate → Advanced |
 | **⚙️ Tooling** | | |
-| [Git](docs/GIT.md) | Reference and branching practice. | Beginner |
-| Build tooling | Vite, bundlers, linters, formatters. | _(coming soon)_ |
-| Deployment | Hosting, CI/CD, preview environments. | _(coming soon)_ |
+| [Git](docs/GIT.md) | Git's model, everyday workflow, branching, code review, and fixing mistakes. | Beginner |
+| [Build tooling](docs/TOOLING.md) | Package managers, bundlers, linters, type checking, monorepos, and dependency health. | Intermediate |
+| [Deployment](docs/DEPLOYMENT.md) | Static and serverless hosting, domains and TLS, CI/CD, caching, and monitoring. | Beginner → Intermediate |
 | **🎨 Design & UI** | | |
-| [Design](docs/DESIGN.md) | Colours, fonts, icons, illustrations, mockups, Figma templates, optimizers. | All levels |
-| [UI Frameworks](docs/UI-FRAMEWORKS.md) | Component libraries and CSS frameworks. | Intermediate |
+| [Design](docs/DESIGN.md) | Colour and type, icons, illustrations, image tools, Figma resources, and AI-assisted design. | All levels |
+| [UI Frameworks](docs/UI-FRAMEWORKS.md) | Design systems, utility-first CSS, headless primitives, and component libraries. | Intermediate |
 | **📺 Beyond code** | | |
 | [Learning](docs/LEARNING.md) | Curricula, docs, channels, courses, books, and communities. | All levels |
-| AI tools | Assistants and workflows for frontend work. | _(coming soon)_ |
-| Practice projects | Briefs and challenges to build from scratch. | _(coming soon)_ |
+| [AI Tools](docs/AI-TOOLS.md) | Coding assistants, the habits that make them useful, their failure modes, and building AI features. | All levels |
+| [Practice & Getting Hired](docs/PRACTICE.md) | Fifteen project briefs with acceptance criteria, interview prep, and where roles are posted. | All levels |
 
 ## How to use this
 

@@ -44,30 +44,31 @@ baribir o'zingiz bosib o'tasiz.
 | Mavzu | Nima bor | Daraja |
 | --- | --- | --- |
 | **🧱 Poydevor** | | |
-| [HTML](docs/HTML.md) | Semantik markup bo'yicha ma'lumotnoma va amaliy mashqlar. | Boshlang'ich |
-| [CSS](docs/CSS.md) | Ma'lumotnoma, layout o'yinlari hamda soya, gradient va clip-path generatorlari. | Boshlang'ich → O'rta |
-| [JavaScript](docs/JAVASCRIPT.md) | Kurslar va kitoblar, so'ng Node va npm, grafiklar, yordamchi kutubxonalar va JWT vositalari. | Boshlang'ich → Yuqori |
+| [HTML](docs/HTML.md) | Semantika, formalar, zamonaviy elementlar va metadata, hamda validatorlar va mashqlar. | Boshlang'ich |
+| [CSS](docs/CSS.md) | Cascade, layout, moslashuvchan tipografika va ranglar, animatsiya, hamda layout o'yinlari va generatorlar. | Boshlang'ich → O'rta |
+| [JavaScript](docs/JAVASCRIPT.md) | Kurslar va kitoblar, so'ng zamonaviy sintaksis, async, modullar, debugging va playground'lar. | Boshlang'ich → Yuqori |
 | **🔤 Til va tiplar** | | |
-| [TypeScript](docs/TYPESCRIPT.md) | Boshlash uchun qo'llanmalar, so'ng tip tizimiga chuqur kirish. | O'rta |
+| [TypeScript](docs/TYPESCRIPT.md) | Boshlash uchun qo'llanmalar, so'ng tip tizimi, loyiha sozlamalari va React'ni tiplash. | O'rta |
 | **⚛️ Framework'lar** | | |
-| [React](docs/REACTJS.md) | Rasmiy ma'lumotnoma, amaliy loyihalar hamda rendering va hook'lar bo'yicha chuqur maqolalar. | O'rta |
-| Boshqa framework va meta-framework'lar | Vue, Svelte, Angular, Next.js, Astro. | _(tez orada)_ |
+| [React](docs/REACTJS.md) | Asosiy tushunchalar, hook'lar, React 19 va Server Components, hamda routing, state va data fetching. | O'rta |
+| [Boshqa framework va meta-framework'lar](docs/FRAMEWORKS.md) | Qaysi birini tanlash, rendering strategiyalari hamda Vue, Svelte, Angular, Solid va Astro ekotizimlari. | O'rta |
 | **🛠 Mahorat** | | |
-| Accessibility | WCAG, ekran o'quvchilar, klaviatura bilan navigatsiya, avtomatik tekshiruvlar. | _(tez orada)_ |
-| Performance | Core Web Vitals, bundle byudjetlari, profiling. | _(tez orada)_ |
-| Xavfsizlik | XSS, CSP, autentifikatsiya patternlari, dependency'larni toza tutish. | _(tez orada)_ |
-| Test | Unit, komponent va end-to-end testlar. | _(tez orada)_ |
+| [Accessibility](docs/ACCESSIBILITY.md) | WCAG, semantika, klaviatura va fokus, ekran o'quvchilar, kontrast va avtomatik tekshiruvlar. | Barcha darajalar |
+| [Performance](docs/PERFORMANCE.md) | Core Web Vitals, field va lab ma'lumotlari, yuklanish va runtime narxi, profiling vositalari. | O'rta → Yuqori |
+| [Xavfsizlik](docs/SECURITY.md) | Origin modeli, XSS, CSP, CORS, autentifikatsiya va sessiyalar, header'lar va supply chain. | O'rta → Yuqori |
+| [Test](docs/TESTING.md) | Unit, komponent va end-to-end testlar, mocking, vizual regressiya va CI. | O'rta |
+| [Browser API'lar](docs/BROWSER-APIS.md) | DOM, observer'lar, storage, tarmoq, worker'lar, service worker'lar va feature detection. | O'rta → Yuqori |
 | **⚙️ Asboblar** | | |
-| [Git](docs/GIT.md) | Ma'lumotnoma va branching bo'yicha amaliyot. | Boshlang'ich |
-| Build vositalari | Vite, bundler'lar, linter'lar, formatter'lar. | _(tez orada)_ |
-| Deployment | Hosting, CI/CD, preview muhitlari. | _(tez orada)_ |
+| [Git](docs/GIT.md) | Git modeli, kundalik ish jarayoni, branching, code review va xatolarni tuzatish. | Boshlang'ich |
+| [Build vositalari](docs/TOOLING.md) | Package manager'lar, bundler'lar, linter'lar, tip tekshiruvi, monorepo'lar va dependency salomatligi. | O'rta |
+| [Deployment](docs/DEPLOYMENT.md) | Statik va serverless hosting, domenlar va TLS, CI/CD, keshlash va monitoring. | Boshlang'ich → O'rta |
 | **🎨 Dizayn va UI** | | |
-| [Dizayn](docs/DESIGN.md) | Ranglar, shriftlar, ikonkalar, illyustratsiyalar, mockup'lar, Figma shablonlari, optimizatorlar. | Barcha darajalar |
-| [UI Framework'lar](docs/UI-FRAMEWORKS.md) | Komponent kutubxonalari va CSS framework'lari. | O'rta |
+| [Dizayn](docs/DESIGN.md) | Rang va tipografika, ikonkalar, illyustratsiyalar, rasm vositalari, Figma resurslari va AI yordamidagi dizayn. | Barcha darajalar |
+| [UI Framework'lar](docs/UI-FRAMEWORKS.md) | Dizayn tizimlari, utility-first CSS, headless primitivlar va komponent kutubxonalari. | O'rta |
 | **📺 Koddan tashqari** | | |
 | [O'rganish](docs/LEARNING.md) | O'quv dasturlari, hujjatlar, kanallar, kurslar, kitoblar va hamjamiyatlar. | Barcha darajalar |
-| AI vositalari | Frontend ishi uchun yordamchilar va ish jarayonlari. | _(tez orada)_ |
-| Amaliy loyihalar | Noldan qurish uchun topshiriqlar va challenge'lar. | _(tez orada)_ |
+| [AI vositalari](docs/AI-TOOLS.md) | Kod yozuvchi yordamchilar, ulardan to'g'ri foydalanish odatlari, xatolari va AI funksiyalarini qurish. | Barcha darajalar |
+| [Amaliyot va ishga kirish](docs/PRACTICE.md) | Qabul mezonlari bilan o'n beshta loyiha topshirig'i, intervyuga tayyorgarlik va ish e'lonlari qayerda. | Barcha darajalar |
 
 > [!NOTE]
 > Mavzu fayllari (`docs/*.md`) ingliz tilida — nega faqat shu ikki fayl tarjima
