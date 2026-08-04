@@ -9,7 +9,7 @@
 ![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-blue)
 ![Link check](https://img.shields.io/github/actions/workflow/status/shuhrat-kobulov/frontend-roadmap/link-check.yml?branch=main&label=links)
 ![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
-![Resources: 149](https://img.shields.io/badge/resources-149-orange)
+![Resources: 1200+](https://img.shields.io/badge/resources-1200%2B-orange)
 
 [English](README.md) · [O'zbekcha](README.uz.md)
 
@@ -19,7 +19,7 @@
 
 ## What this is
 
-A hand-picked set of **149 free resources** for learning frontend development,
+A hand-picked set of **1200+ free resources** for learning frontend development,
 organised by topic and sorted roughly by the order you'd meet them. Every entry
 is something a working developer would actually recommend — no paywalls, no
 signup walls, no link-farm blogs. It's for self-taught learners, bootcamp
