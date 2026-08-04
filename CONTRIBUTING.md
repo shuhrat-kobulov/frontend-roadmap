@@ -42,7 +42,10 @@ The three things people get wrong most often:
 1. The separator is ` — `, an **em dash** with a space either side. Not a
    hyphen, not an en dash, not a colon.
 2. The description **starts with a capital letter and ends with a full stop**.
-   Entries used to end with a semicolon; they no longer do.
+   Entries used to end with a semicolon; they no longer do. Opening with a
+   numeral (`3KB alternative…`), a quotation mark, or a literal lowercase
+   identifier (`tsconfig.json options…`) is fine — the rule is that it must not
+   open with an ordinary lowercase word.
 3. Tags come after the full stop, and only from the closed vocabulary in the
    style guide: `[freemium]` `[paid]`, `[beginner]` `[intermediate]`
    `[advanced]`, `[ru]` `[uz]`. Free and English are the defaults and are never
@@ -50,9 +53,22 @@ The three things people get wrong most often:
 
 ## Where to add it
 
-- Pick the file that matches the topic: `docs/HTML.md`, `docs/CSS.md`,
-  `docs/JAVASCRIPT.md`, `docs/REACTJS.md`, `docs/TYPESCRIPT.md`,
-  `docs/DESIGN.md`, `docs/UI-FRAMEWORKS.md`, `docs/GIT.md`, `docs/LEARNING.md`.
+- Pick the file that matches the topic. They are listed here in the same groups,
+  and the same order, as the [Contents table in `README.md`](README.md#contents)
+  — if you change one, change the other:
+
+  - **Foundations** — `docs/HTML.md`, `docs/CSS.md`, `docs/JAVASCRIPT.md`
+  - **Language & types** — `docs/TYPESCRIPT.md`
+  - **Frameworks** — `docs/REACTJS.md`, `docs/FRAMEWORKS.md`
+  - **Craft** — `docs/ACCESSIBILITY.md`, `docs/PERFORMANCE.md`,
+    `docs/SECURITY.md`, `docs/TESTING.md`, `docs/BROWSER-APIS.md`
+  - **Tooling** — `docs/GIT.md`, `docs/TOOLING.md`, `docs/DEPLOYMENT.md`
+  - **Design & UI** — `docs/DESIGN.md`, `docs/UI-FRAMEWORKS.md`
+  - **Beyond code** — `docs/LEARNING.md`, `docs/AI-TOOLS.md`, `docs/PRACTICE.md`
+
+  `docs/STYLE.md` and `docs/TRANSLATIONS.md` are the only other files in
+  `docs/`. They describe how the repo is written rather than listing resources,
+  so nothing gets added to them.
 - Pick the section inside it. The section names are fixed: `## Learn` for
   tutorials, courses, and videos; `## Reference` for documentation, cheatsheets,
   and galleries; `## Practice` for games, exercises, and templates; `## Tools`
@@ -65,17 +81,29 @@ The three things people get wrong most often:
 
 Open an issue first so we can agree on the shape before you write it. The five
 `## ` section names are fixed, so what you are usually proposing is a `### `
-subgroup inside `## Tools` — and that needs three or more entries to be worth
-having. Otherwise put them in the closest existing section. A whole new
-`docs/*.md` file also needs a link added to the Contents list in `README.md`,
-under the group it belongs to (Core, Design, Tools, or Additional).
+subgroup inside one of them — most often inside `## Reference` or `## Tools`,
+which are the sections that grow long enough to need breaking up. A subgroup
+needs three or more entries to be worth having, in a section of roughly a dozen
+entries or more. Otherwise put them in the closest existing section.
+
+A whole new `docs/*.md` file needs two more things, both of them one line:
+
+1. A row in the Contents table in `README.md`, under the group it belongs to —
+   Foundations, Language & types, Frameworks, Craft, Tooling, Design & UI, or
+   Beyond code.
+2. An entry in `site/src/lib/repo.mjs`, in the matching sidebar group, so the
+   page exists on the website — see [The website](#the-website) below.
+
+Nothing else needs touching: topic files are English only, so a new one never
+involves a translated file — see [docs/TRANSLATIONS.md](docs/TRANSLATIONS.md).
 
 ## The website
 
 The Markdown files are the source of truth. The site at
 <https://shuhrat-kobulov.github.io/frontend-roadmap/> is generated from them by
-the Astro project in `site/`, which reads `README.md`, `ROADMAP.md` and
-`docs/*.md` where they are — there is no second copy of any file.
+the Astro project in `site/`, which reads `README.md`, `ROADMAP.md`, everything
+in `docs/`, and the other Markdown at the repo root where they already are —
+there is no second copy of any file.
 
 **You never need to touch `site/`.** Edit the Markdown, open your PR, and the
 page updates itself when it merges. `site/` only changes if you are changing how
