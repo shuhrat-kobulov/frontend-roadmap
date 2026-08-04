@@ -96,11 +96,11 @@ tuting.
   validator ([docs/HTML.md#reference](docs/HTML.md#reference)) bitta ham xato
   bermasin; 320px dan 1440px gacha hech qanday kenglikda gorizontal scrollbar
   chiqmasin; har bir rasm siqilgan bo'lsin
-  ([docs/DESIGN.md#converters--optimizers](docs/DESIGN.md#converters--optimizers));
+  ([docs/DESIGN.md#images--media](docs/DESIGN.md#images--media));
   faqat `Tab` bilan boshqarib bo'lsin; GitHub Pages'da joylashtirilgan va manba kodi
   ochiq repoda bo'lsin.
 - **Haqiqiy dizayndagi bitta ekranni aniq qayta qurish.** Bepul Figma faylini
-  ([docs/DESIGN.md#figma-templates](docs/DESIGN.md#figma-templates)) oling va unga
+  ([docs/DESIGN.md#figma-resources](docs/DESIGN.md#figma-resources)) oling va unga
   mos qiling. Talablar: layout faqat flexbox va grid bilan qurilsin — absolute
   positioning yo'q va konteynerlarda qat'iy piksel balandligi yo'q; masofalar va
   shrift o'lchamlari ko'z bilan chamalab emas, dizayndan olinsin; bitta breakpoint —
@@ -130,17 +130,17 @@ yaratadigan narsalar haqida: asinxronlik, modullar, paket ekotizimi, build vosit
 
 1. Event loop, promise'lar va `async`/`await` — [docs/JAVASCRIPT.md#learn](docs/JAVASCRIPT.md#learn)
 2. DOM, hodisalar va brauzer API'lari ([docs/BROWSER-APIS.md#reference](docs/BROWSER-APIS.md#reference)) — framework ostidagi platforma
-3. HTTP va ma'lumot olish, xato holatlari bilan birga — [docs/JAVASCRIPT.md#learn](docs/JAVASCRIPT.md#learn) va [docs/JAVASCRIPT.md#utilities](docs/JAVASCRIPT.md#utilities)
-4. ES modullar, npm va lockfile nima uchun kerakligi — [docs/JAVASCRIPT.md#node--npm](docs/JAVASCRIPT.md#node--npm)
+3. HTTP va ma'lumot olish, xato holatlari bilan birga — [docs/JAVASCRIPT.md#learn](docs/JAVASCRIPT.md#learn) va [docs/JAVASCRIPT.md#async](docs/JAVASCRIPT.md#async)
+4. ES modullar, npm va lockfile nima uchun kerakligi — [docs/TOOLING.md#package-managers](docs/TOOLING.md#package-managers)
 5. Zamonaviy build vositasi ([docs/TOOLING.md#build-tools-and-bundlers](docs/TOOLING.md#build-tools-and-bundlers)) — o'sha ro'yxatdagi eskilarini emas, **Vite'ni ishlating**
 6. TypeScript asoslari — [docs/TYPESCRIPT.md#learn](docs/TYPESCRIPT.md#learn) ning dastlabki to'rt bobi, hozircha undan nariga o'tmang
 
 > [!WARNING]
-> [docs/JAVASCRIPT.md#node--npm](docs/JAVASCRIPT.md#node--npm) da hali ham Bower,
-> Gulp va Webpack bor. Bower yillar oldin deprecated bo'lgan, Gulp esa yangi frontend
-> ishlarida kam uchraydi; Webpack'ni tanib olish foydali, chunki eski kod bazalarida
-> unga duch kelasiz, lekin uni birinchi bo'lib o'rganmang. Yangi loyihalarni Vite
-> bilan boshlang.
+> [docs/TOOLING.md#build-tools-and-bundlers](docs/TOOLING.md#build-tools-and-bundlers)
+> da hali ham Bower, Gulp va Webpack bor. Bower yillar oldin deprecated bo'lgan,
+> Gulp esa yangi frontend ishlarida kam uchraydi; Webpack'ni tanib olish foydali,
+> chunki eski kod bazalarida unga duch kelasiz, lekin uni birinchi bo'lib
+> o'rganmang. Yangi loyihalarni Vite bilan boshlang.
 
 **Quring** — bitta ilova, so'ng uni o'giring:
 
@@ -149,8 +149,8 @@ yaratadigan narsalar haqida: asinxronlik, modullar, paket ekotizimi, build vosit
   framework yo'q; loading, bo'sh, xato va muvaffaqiyat holatlarining har biri alohida
   chizilgan va har biri devtools'da so'rovni sekinlashtirib yoki bloklab tekshirilgan;
   har bir tugma bosilishida so'rov yubormaydigan qidiruv yoki filtr; ESLint
-  ([docs/JAVASCRIPT.md#node--npm](docs/JAVASCRIPT.md#node--npm)) bitta ham qoidasi
-  o'chirilmagan holda o'tadi; deploy qilingan.
+  ([docs/TOOLING.md#linting-and-formatting](docs/TOOLING.md#linting-and-formatting))
+  bitta ham qoidasi o'chirilmagan holda o'tadi; deploy qilingan.
 - **So'ng uni TypeScript'ga ko'chiring** — `strict: true` bilan va bitta ham `any`
   ishlatmasdan; API javobi ham taxmin qilib emas, haqiqiy payload'dan tiplashtirilsin.
 
@@ -240,11 +240,11 @@ birinchi o'n soniyadayoq yiqiladi.
 **O'rganing** — shu tartibda:
 
 1. Accessibility ([docs/ACCESSIBILITY.md](docs/ACCESSIBILITY.md)) — klaviatura bilan boshqarish, fokusni boshqarish, accessible name'lar va ARIA qachon noto'g'ri javob ekani
-2. Performance va Core Web Vitals ([docs/PERFORMANCE.md#core-web-vitals](docs/PERFORMANCE.md#core-web-vitals)) — avval o'lchang; dependency narxini [docs/JAVASCRIPT.md#node--npm](docs/JAVASCRIPT.md#node--npm) bilan, rasm og'irligini [docs/DESIGN.md#converters--optimizers](docs/DESIGN.md#converters--optimizers) bilan tekshiring
+2. Performance va Core Web Vitals ([docs/PERFORMANCE.md#core-web-vitals](docs/PERFORMANCE.md#core-web-vitals)) — avval o'lchang; dependency narxini [docs/TOOLING.md#dependency-health](docs/TOOLING.md#dependency-health) bilan, rasm og'irligini [docs/DESIGN.md#images--media](docs/DESIGN.md#images--media) bilan tekshiring
 3. Test ([docs/TESTING.md](docs/TESTING.md)) — unit, komponent va ilova bo'ylab bitta end-to-end yo'l
-4. Xavfsizlik asoslari ([docs/SECURITY.md](docs/SECURITY.md)) — XSS, CSP va token'larni qayerda saqlash mumkin, qayerda mumkin emasligi ([docs/JAVASCRIPT.md#jwt](docs/JAVASCRIPT.md#jwt))
+4. Xavfsizlik asoslari ([docs/SECURITY.md](docs/SECURITY.md)) — XSS, CSP va token'larni qayerda saqlash mumkin, qayerda mumkin emasligi ([docs/SECURITY.md#authentication-and-sessions](docs/SECURITY.md#authentication-and-sessions))
 5. Deployment va CI ([docs/DEPLOYMENT.md#cicd](docs/DEPLOYMENT.md#cicd)) — main relizga tayyormi yoki yo'qmi, buni odam emas, pipeline hal qiladi
-6. Brauzerlararo haqiqat — ishlatishdan oldin qo'llab-quvvatlanishini [docs/JAVASCRIPT.md#utilities](docs/JAVASCRIPT.md#utilities) bilan tekshiring
+6. Brauzerlararo haqiqat — ishlatishdan oldin qo'llab-quvvatlanishini [docs/JAVASCRIPT.md#language-reference](docs/JAVASCRIPT.md#language-reference) bilan tekshiring
 
 **Quring** — yangi loyiha boshlamang. 3-bosqichdagi ilovani oling va uni mustahkamlang:
 
@@ -286,7 +286,7 @@ bir nechta yo'nalgich berilgan.
 
 **Dizayn tizimlari** — dizayn bilan kod orasidagi chokni yoqtiradiganlar uchun.
 
-- Design token'lar: rang, shrift shkalasi va masofalar — ma'lumot sifatida ([docs/DESIGN.md#colors--gradients](docs/DESIGN.md#colors--gradients), [docs/DESIGN.md#converters--optimizers](docs/DESIGN.md#converters--optimizers)).
+- Design token'lar: rang, shrift shkalasi va masofalar — ma'lumot sifatida ([docs/DESIGN.md#color](docs/DESIGN.md#color), [docs/DESIGN.md#typography](docs/DESIGN.md#typography)).
 - O'zingiznikini qurishdan oldin yetuk tizimlar qanday tuzilganini o'qing — [docs/UI-FRAMEWORKS.md#tools](docs/UI-FRAMEWORKS.md#tools).
 - Komponent API dizayni: variantlar, kompozitsiya va zaxira yo'llari.
 - Hujjat va versiyalash — keyin eslab qolinadigan narsa emas, birinchi darajali ish sifatida.
@@ -324,7 +324,7 @@ Yangi boshlovchilar erta foyda bermaydigan narsalarga yo'qotadigan vaqt:
 
 - **CSS xossalarini yodlash.** [docs/CSS.md#reference](docs/CSS.md#reference) aynan shuning uchun bor. Cascade va layoutni o'rganing; qolganini umr bo'yi qarab tursangiz bo'ladi.
 - **Bir vaqtda uchta framework o'rganish.** Ish beruvchilar chuqurlikni yollaydi. Uchta yuzaki framework suhbatda haqiqatan tushunadigan bittasidan yomonroq ko'rinadi.
-- **jQuery.** Unga eski kodda duch kelasiz va o'shanda uni yarim kunda o'rganib olasiz. Platforma uni o'ziga singdirdi — [docs/JAVASCRIPT.md#utilities](docs/JAVASCRIPT.md#utilities) ga qarang.
+- **jQuery.** Unga eski kodda duch kelasiz va o'shanda uni yarim kunda o'rganib olasiz. Platforma uni o'ziga singdirdi — [docs/JAVASCRIPT.md#deep-dives](docs/JAVASCRIPT.md#deep-dives) ga qarang.
 - **Sahifa qura olmasdan turib algoritm mashq qilish.** Frontend suhbatlari asosan amaliy. Buni keyinroq, so'raydigan kompaniyalarga mo'ljallab qiling.
 - **Webpack'ni qo'lda sozlash.** Vite'ning standart sozlamalari yetarli. Build sozlash — haqiqiy muammo talab qilganda egallanadigan ko'nikma.
 - **Darslik maratonlari.** O'ninchi darslik yordamsiz qurgan birinchi narsangizdan kamroq o'rgatadi. Anchadan beri tiqilib qolmagan bo'lsangiz, demak o'rganmayapsiz.

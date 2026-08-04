@@ -87,10 +87,10 @@ you learn by using: keep the Elements and Console panels open from day one.
 - **A three-page personal site.** No CSS framework, no template. Requirements:
   zero errors from the W3C validator ([docs/HTML.md#reference](docs/HTML.md#reference));
   no horizontal scrollbar at any width from 320px to 1440px; every image
-  compressed ([docs/DESIGN.md#converters--optimizers](docs/DESIGN.md#converters--optimizers));
+  compressed ([docs/DESIGN.md#images--media](docs/DESIGN.md#images--media));
   navigable with `Tab` alone; hosted on GitHub Pages with the source in a public repo.
 - **A faithful rebuild of one screen from a real design.** Take a free Figma file
-  ([docs/DESIGN.md#figma-templates](docs/DESIGN.md#figma-templates)) and match it.
+  ([docs/DESIGN.md#figma-resources](docs/DESIGN.md#figma-resources)) and match it.
   Requirements: layout built only with flexbox and grid — no absolute positioning
   and no fixed pixel heights on containers; spacing and type sizes taken from the
   design rather than eyeballed; one breakpoint you chose because the layout broke,
@@ -119,16 +119,17 @@ and enough TypeScript to stop shipping `undefined is not a function`.
 
 1. The event loop, promises, and `async`/`await` — [docs/JAVASCRIPT.md#learn](docs/JAVASCRIPT.md#learn)
 2. The DOM, events, and browser APIs ([docs/BROWSER-APIS.md#reference](docs/BROWSER-APIS.md#reference)) — the platform under the framework
-3. HTTP and fetching data, including the failure cases — [docs/JAVASCRIPT.md#learn](docs/JAVASCRIPT.md#learn) and [docs/JAVASCRIPT.md#utilities](docs/JAVASCRIPT.md#utilities)
-4. ES modules, npm, and what a lockfile is for — [docs/JAVASCRIPT.md#node--npm](docs/JAVASCRIPT.md#node--npm)
+3. HTTP and fetching data, including the failure cases — [docs/JAVASCRIPT.md#learn](docs/JAVASCRIPT.md#learn) and [docs/JAVASCRIPT.md#async](docs/JAVASCRIPT.md#async)
+4. ES modules, npm, and what a lockfile is for — [docs/TOOLING.md#package-managers](docs/TOOLING.md#package-managers)
 5. A modern build tool ([docs/TOOLING.md#build-tools-and-bundlers](docs/TOOLING.md#build-tools-and-bundlers)) — **use Vite**, not the older tools in that list
 6. TypeScript basics — the first four chapters of [docs/TYPESCRIPT.md#learn](docs/TYPESCRIPT.md#learn), and no further yet
 
 > [!WARNING]
-> [docs/JAVASCRIPT.md#node--npm](docs/JAVASCRIPT.md#node--npm) still lists Bower,
-> Gulp, and Webpack. Bower has been deprecated for years and Gulp is rare in new
-> frontend work; Webpack is worth recognising because you will meet it in older
-> codebases, but do not learn it first. Start new projects with Vite.
+> [docs/TOOLING.md#build-tools-and-bundlers](docs/TOOLING.md#build-tools-and-bundlers)
+> still lists Bower, Gulp, and Webpack. Bower has been deprecated for years and
+> Gulp is rare in new frontend work; Webpack is worth recognising because you will
+> meet it in older codebases, but do not learn it first. Start new projects with
+> Vite.
 
 **Build** — one application, then convert it:
 
@@ -137,8 +138,8 @@ and enough TypeScript to stop shipping `undefined is not a function`.
   framework; loading, empty, error, and success states each rendered explicitly
   and each verified by throttling or blocking the request in devtools; a search
   or filter that does not fire a request on every keystroke; ESLint
-  ([docs/JAVASCRIPT.md#node--npm](docs/JAVASCRIPT.md#node--npm)) passing with no
-  disabled rules; deployed.
+  ([docs/TOOLING.md#linting-and-formatting](docs/TOOLING.md#linting-and-formatting))
+  passing with no disabled rules; deployed.
 - **Then port it to TypeScript** with `strict: true` and zero `any` — including
   the API response, typed from the real payload rather than guessed.
 
@@ -225,11 +226,11 @@ first ten seconds.
 **Learn** — in this order:
 
 1. Accessibility ([docs/ACCESSIBILITY.md](docs/ACCESSIBILITY.md)) — keyboard operability, focus management, accessible names, and when ARIA is the wrong answer
-2. Performance and Core Web Vitals ([docs/PERFORMANCE.md#core-web-vitals](docs/PERFORMANCE.md#core-web-vitals)) — measure first; check dependency cost with [docs/JAVASCRIPT.md#node--npm](docs/JAVASCRIPT.md#node--npm) and image weight with [docs/DESIGN.md#converters--optimizers](docs/DESIGN.md#converters--optimizers)
+2. Performance and Core Web Vitals ([docs/PERFORMANCE.md#core-web-vitals](docs/PERFORMANCE.md#core-web-vitals)) — measure first; check dependency cost with [docs/TOOLING.md#dependency-health](docs/TOOLING.md#dependency-health) and image weight with [docs/DESIGN.md#images--media](docs/DESIGN.md#images--media)
 3. Testing ([docs/TESTING.md](docs/TESTING.md)) — unit, component, and one end-to-end path through the app
-4. Security basics ([docs/SECURITY.md](docs/SECURITY.md)) — XSS, CSP, and where tokens may and may not be stored ([docs/JAVASCRIPT.md#jwt](docs/JAVASCRIPT.md#jwt))
+4. Security basics ([docs/SECURITY.md](docs/SECURITY.md)) — XSS, CSP, and where tokens may and may not be stored ([docs/SECURITY.md#authentication-and-sessions](docs/SECURITY.md#authentication-and-sessions))
 5. Deployment and CI ([docs/DEPLOYMENT.md#cicd](docs/DEPLOYMENT.md#cicd)) — a pipeline, not a person, decides whether main is releasable
-6. Cross-browser reality — check support before you use it, with [docs/JAVASCRIPT.md#utilities](docs/JAVASCRIPT.md#utilities)
+6. Cross-browser reality — check support before you use it, with [docs/JAVASCRIPT.md#language-reference](docs/JAVASCRIPT.md#language-reference)
 
 **Build** — do not start a new project. Take the stage 3 app and harden it:
 
@@ -271,7 +272,7 @@ curriculum.
 
 **Design systems** — for people who like the seam between design and code.
 
-- Design tokens: colour, type scale, and spacing as data ([docs/DESIGN.md#colors--gradients](docs/DESIGN.md#colors--gradients), [docs/DESIGN.md#converters--optimizers](docs/DESIGN.md#converters--optimizers)).
+- Design tokens: colour, type scale, and spacing as data ([docs/DESIGN.md#color](docs/DESIGN.md#color), [docs/DESIGN.md#typography](docs/DESIGN.md#typography)).
 - Read how mature systems are structured before building one — [docs/UI-FRAMEWORKS.md#tools](docs/UI-FRAMEWORKS.md#tools).
 - Component API design: variants, composition, and escape hatches.
 - Documentation and versioning as first-class work, not an afterthought.
@@ -309,7 +310,7 @@ Time beginners lose to things that do not pay off early:
 
 - **Memorising CSS properties.** [docs/CSS.md#reference](docs/CSS.md#reference) exists so you do not have to. Learn the cascade and layout; look up the rest forever.
 - **Learning three frameworks at once.** Employers hire depth. Three shallow frameworks interview worse than one you actually understand.
-- **jQuery.** You will meet it in old code and can learn it in an afternoon then. The platform absorbed it — see [docs/JAVASCRIPT.md#utilities](docs/JAVASCRIPT.md#utilities).
+- **jQuery.** You will meet it in old code and can learn it in an afternoon then. The platform absorbed it — see [docs/JAVASCRIPT.md#deep-dives](docs/JAVASCRIPT.md#deep-dives).
 - **Algorithm grinding before you can build a page.** Frontend interviews are overwhelmingly practical. Do this later, targeted at the companies that ask.
 - **Configuring Webpack by hand.** Vite defaults are fine. Build configuration is a skill you acquire when a real problem demands it.
 - **Tutorial marathons.** The tenth tutorial teaches less than the first thing you build unaided. If you have not been stuck in a while, you are not learning.
