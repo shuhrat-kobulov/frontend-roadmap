@@ -102,9 +102,39 @@ of resource it holds, and an entry that would arguably fit a different section
 stays where it is rather than being moved — see [Ordering](#ordering).
 
 `README.md` and this file are not resource lists, so the vocabulary above does
-not apply to them. The README is the entry point: it keeps its four navigation
-groups (`## Core`, `## Design`, `## Tools`, `## Additional`), which group *files*
-rather than resources, and its entries are bare links with no description.
+not apply to them. The README is the entry point, and it navigates *files* rather
+than resources: instead of the sections above, it carries a single `## Contents`
+table with three columns — `Topic`, `What's inside`, `Level`. So a README row is
+not a bare link. It has a one-line description of what the file covers, and a
+level written as prose (`Beginner`, `Beginner → Intermediate`, `All levels`),
+which is a range across a whole file and so is not the same thing as the
+`[beginner]`/`[intermediate]`/`[advanced]` tag on a single entry.
+
+The table's rows are grouped by a bold label in the first column with the other
+two cells empty — **🧱 Foundations**, **🔤 Language & types**, **⚛️ Frameworks**,
+**🛠 Craft**, **⚙️ Tooling**, **🎨 Design & UI**, **📺 Beyond code**. These groups
+mirror the sidebar groups in [`site/src/lib/repo.mjs`](../site/src/lib/repo.mjs),
+which is what the website builds its navigation from. Adding, renaming, or
+reordering a group means changing both, in the same commit, or the site and the
+README disagree about the shape of the roadmap.
+
+### Trailing prose sections
+
+There is one exception to the set above. A file may end with a single prose
+section — advice about the topic rather than a list of things to go and read —
+under a name of its own, on these conditions:
+
+1. It comes **last**, after every resource section in the file.
+2. It holds **no resource entries**: no `- [Name](url) — Description.` lines, and
+   no links that are really entries wearing prose. Bullets of advice are fine.
+3. There is **one** of them, named for what the advice is about.
+
+[`LEARNING.md`](LEARNING.md) is the instance: `## How to learn effectively`
+closes the file with study advice that belongs to no resource in particular.
+
+The conditions are what keep this from reopening the vocabulary. A prose section
+is not somewhere to park entries that did not fit the five names — if one starts
+collecting links, it has become a resource section and needs one of those names.
 
 ### Old section names
 
@@ -128,7 +158,8 @@ The list used ad-hoc section names for its first five years. They map like this:
 ## Headings
 
 - One `# Title` per file, in Title Case, naming the topic.
-- `## ` for the sections listed above, and nothing else.
+- `## ` for the sections listed above, plus the one trailing prose section they
+  allow, and nothing else.
 - `### ` **only** to break a long `## ` section — roughly a dozen entries or
   more — into groups that are already obvious in the content, named with a plain
   descriptive noun (`### Icons`, `### Charts`). A long but homogeneous section

@@ -1,8 +1,8 @@
 # Translations
 
-This repo is maintained in English, with a small number of files translated into
-other languages. This document says which files those are, why the set is
-deliberately small, and what to do if you want to add a language.
+The repo is maintained in English, with a few files translated: which those are,
+why the set is deliberately small, and what to do if you want to add a language.
+Part of the [Frontend Roadmap](../README.md).
 
 ## What is translated
 
